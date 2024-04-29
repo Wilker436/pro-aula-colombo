@@ -1,4 +1,6 @@
+
 <?php
+//carlos hackeo el sistema
 include 'database.php';
 
 $email = $_POST['correo'];
