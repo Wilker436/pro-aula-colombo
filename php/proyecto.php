@@ -14,6 +14,7 @@ mysqli_stmt_fetch($check_query);
 mysqli_stmt_close($check_query); // Close the result set
 
 //Check if that email exits
+//alert to confirm
 if ($count > 0) {
     echo '
         <script>
