@@ -1,0 +1,284 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.margen-interno {
+    padding: 0 50px;
+}
+
+.header {
+    display: flex;
+    flex-flow: column nowrap;
+    background: url(imagenes/f01.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    height: 500px;
+
+}
+
+
+.menu {
+    background: rgba(0, 0, 0, 0.78);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 120px;
+}
+
+.logo {
+    flex: 1 1 auto;
+}
+
+.logo img {
+    padding-top: 10px;
+    max-width: 30%;
+    height: 30%;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 30px;
+}
+
+.nav {
+    flex: 5 1 auto;
+}
+
+.nav a {
+    color: #b2c0a5;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+
+.nav .here{
+    color: #ffffff;
+    text-decoration: underline overline #ffffff 3px;
+    
+}
+
+
+.nav a:hover {
+    color: #fff;
+}
+
+
+.social {
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.social a {
+    color: #b2c0a5;
+    padding: 0 5px;
+}
+
+.social a:hover {
+    color: #ffffff;
+}
+
+
+/* */
+
+.new-Body{ 
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.typewriter h1 {
+    font-size: 40px;
+    color: #fff;
+    overflow: hidden;
+    border-right: .15em solid #5F6F52; 
+    white-space: nowrap;
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #5F6F52 }
+  }
+/*  */
+
+.principal{
+    background: #525D49;
+    height: 1800px;
+    color: white;
+    background: url(imagenes/f01.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+}
+
+
+.contenedor{
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;  
+    background: #ecf0d5;
+    padding-top: 40px;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 570px;
+    
+}
+
+.imagen{
+    height: 300px;
+    width: 300px;
+    margin-left: 100px;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    flex: 1 1 40%;
+
+}
+
+.imagen img{
+    height: 450px;
+    width: 450px;
+    border-radius: 90px 20px;
+}
+
+.textx{
+    margin-left: -300px;
+    height: 300px;
+    width: auto;
+    color: #5F6F52;
+    font-size: 13px;
+    letter-spacing: 1px;
+    flex: 1 1 40%;
+}
+
+.h11{
+    padding-top: 40px;
+    padding-right: 100px;
+    font-size: 35px;
+    color: #5F6F52;
+    text-align: center;
+
+
+}
+.p2{
+    padding-right: 100px;
+    padding-top: 30px;
+    font-size: 25px;
+    text-align: justify;
+    letter-spacing: 0.01px;
+}
+.ab{
+    padding-right: 100px;
+    margin-top: 60px;
+}
+.ab a{
+    padding: 5px 15px;
+    font-size: 30px;
+    color: #FAFFE4;
+    background: #5F6F52;
+    letter-spacing: 2px;
+    border-radius: 90px 20px;
+    cursor: pointer;
+}
+
+.ab a:hover{
+    background: #D3E4CD;
+    color: #5F6F52;
+}
+
+.aventuras{
+    margin-top: 40px;
+    background: #ecf0d5;
+    padding-top: 40px;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 400px;
+    color: #5F6F52;
+    align-content: center;
+    align-items: center;
+}
+
+.prox{
+    font-size: 40px;
+    text-align: center;
+}
+
+h3{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.submit-btn {
+    padding: 5px 15px;
+    font-size: 30px;
+    color: #FAFFE4;
+    background: #5F6F52;
+    letter-spacing: 2px;
+    border-radius: 90px 20px;
+    cursor: pointer;
+}
+.submit-btn:hover {
+    background: #D3E4CD;
+    color: #5F6F52;
+}
+
+.footer {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+
+.pie {
+    text-align: center;
+}
+
+.pie a {
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: o 10px;
+    letter-spacing: 2px;
+}
