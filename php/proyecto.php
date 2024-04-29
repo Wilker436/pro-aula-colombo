@@ -1,3 +1,4 @@
+<?php
 include 'database.php';
 
 $email = $_POST['correo'];
@@ -5,12 +6,12 @@ $email = $_POST['correo'];
 // Check if the email already exists
 
 $check_query = mysqli_prepare($conexion, "SELECT COUNT(*) FROM users WHERE email = ?");
+//put  's' and ? for each variable of your table
 mysqli_stmt_bind_param($check_query, 's', $email);
 mysqli_stmt_execute($check_query);
 mysqli_stmt_bind_result($check_query, $count);
 mysqli_stmt_fetch($check_query);
 mysqli_stmt_close($check_query); // Close the result set
-mysqli_stmt_close($check_query);
 
 //Check if that email exits
 if ($count > 0) {
