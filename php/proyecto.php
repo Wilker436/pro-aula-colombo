@@ -1,6 +1,7 @@
 
 <?php
 //carlos hackeo el sistema
+//Wilker hackeo a carlos
 include 'database.php';
 
 $email = $_POST['correo'];
