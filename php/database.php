@@ -1,3 +1,4 @@
 <?php
+//lynn hackeo el sistema
 $conexion = mysqli_connect("localhost", "root", "", "useraccount");
 // initialize variables for the insert query 
