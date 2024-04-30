@@ -91,7 +91,16 @@
 
 
             <div class="reseña">
-                <div class="DejarReseña"></div>
+                <div class="DejarReseña">
+                    <h1 class="rsñ">Deja tu reseña sobre nosotros</h1>
+                    <form action="php/Reseña.php" method="post" class="formularioReseñas">
+                        Deje su nombre: <input type="text" name="Nombre" required placeholder="Ej: Juan Esteban" class="textarea">
+                        <br>
+                        Deje su reseña:   <input type="text" name="Reseña" required placeholder="Ej: Lorem ipsum dolor sit amet." class="textarea2">
+                        <br>    
+                        <center><input type="submit" value="Dejar reseña" class="submit-btn"></center>
+                    </form>
+                </div>
 
                 <div class="CajaDeReseñas"></div>
             </div>
@@ -101,7 +110,7 @@
                 <h3>Introduce tu correo electrónico acontinuación para recibir actualizaciones</h3>
                 <center>
                     <form action="php/proyecto.php" method="post">
-                        <input type="text" name="correo" required placeholder="Ej: SenderoNomada@gmail.com"
+                        <input type="email" name="correo" required placeholder="Ej: SenderoNomada@gmail.com"
                             class="textarea">
                         <br>
                         <input type="submit" value="Registrar" class="submit-btn">

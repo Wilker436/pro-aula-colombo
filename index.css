@@ -245,6 +245,47 @@ h3{
     margin-top: 20px;
     margin-bottom: 25px;
 }
+
+.textarea2 {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+
+.reseña {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+.DejarReseña{
+    padding-top: 10px;
+    background: #ecf0d5;
+    width: 600px;
+    height: 450px;
+    color: #5F6F52;
+}
+
+.formularioReseñas{
+    font-size: 18px;
+    text-align: left;
+    padding-left: 30px ;
+}
+
+
+
+
+.rsñ{
+    font-size: 28px;
+    text-align: center;
+}
+
 .submit-btn {
     padding: 5px 15px;
     font-size: 30px;
