@@ -15,9 +15,13 @@ a {
     text-decoration: none;
 }
 
-.padre {
+.div-padre {
     display: flex;
     flex-flow: column nowrap;
+    background: url(imagenes/kace-rodriguez-p3OzJuT_Dks-unsplash.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
 }
 
 .margen-interno {
@@ -27,12 +31,7 @@ a {
 .header {
     display: flex;
     flex-flow: column nowrap;
-    background: url(imagenes/kace-rodriguez-p3OzJuT_Dks-unsplash.jpg);
-    background-position: 10% 50%;
-    background-attachment: contain;
-    background-size: 100%; 
     height: 500px;
-
 }
 
 
@@ -137,12 +136,8 @@ a {
 /*  */
 
 .principal{
-    background: url(imagenes/kace-rodriguez-p3OzJuT_Dks-unsplash.jpg);
     height: 2800px;
     color: white;
-    background-position: center;
-    background-attachment: contain;
-    background-size: cover;
 }
 
 .informacion{

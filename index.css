@@ -15,9 +15,13 @@ a {
     text-decoration: none;
 }
 
-.padre {
+.div-padre {
     display: flex;
     flex-flow: column nowrap;
+    background: url(imagenes/f01.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
 }
 
 .margen-interno {
@@ -27,10 +31,6 @@ a {
 .header {
     display: flex;
     flex-flow: column nowrap;
-    background: url(imagenes/f01.jpg);
-    background-position: center;
-    background-attachment: contain;
-    background-size: cover;
     height: 500px;
 
 }
@@ -135,13 +135,8 @@ a {
 /*  */
 
 .principal{
-    background: #525D49;
     height: 1800px;
     color: white;
-    background: url(imagenes/f01.jpg);
-    background-position: center;
-    background-attachment: contain;
-    background-size: cover;
 }
 
 
