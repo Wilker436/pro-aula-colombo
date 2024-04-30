@@ -31,7 +31,7 @@ a {
 .header {
     display: flex;
     flex-flow: column nowrap;
-    height: 500px;
+    height: 300px;
 }
 
 
@@ -136,7 +136,7 @@ a {
 /*  */
 
 .principal{
-    height: 2800px;
+    height: 3500px;
     color: white;
 }
 
@@ -270,26 +270,6 @@ a {
 
 
 
-.footer {
-    background: #000;
-    display: flex;
-    justify-content: center;
-    height: 30px;
-}
-
-.pie {
-    text-align: center;
-}
-
-.pie a {
-    color: #fff;
-    font-size: 11px;
-    text-transform: uppercase;
-    padding: o 10px;
-    letter-spacing: 2px;
-}
-
-
 .im2{
     width: 700px;
     height: auto;
@@ -346,4 +326,77 @@ a {
     border-left: 5px solid #ffffff;
     border-right: 5px solid #ffffff;
     border-bottom: 5px solid #ffffff;
+}
+
+.h1lideres{
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+.container-lideres{
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    padding-left: 115px;
+}
+
+.lideres{
+    background: #ecf0d5;
+    border: 1px solid #5F6F52;
+    color: #5F6F52;
+    margin-top: 2%;
+    margin-left: 2%;
+    padding: 10px;
+    border-radius: 20px ;
+    border-top: 5px solid #ffffff;
+    border-left: 5px solid #ffffff;
+    border-right: 5px solid #ffffff;
+    border-bottom: 5px solid #ffffff;
+    box-shadow: 10px 10px rgb(162, 190, 162);
+    width: 500px; 
+    height: 600px;
+    box-sizing: border-box;
+
+}
+
+.lideres h2{
+    text-align: center;
+    font-weight: 700;
+    color: #5F6F52;
+
+}
+
+.lideres img{
+    width: 70%;
+    height: auto;
+    padding-top: 10px;
+    border-radius: 100%;
+    border-top: 5px solid #ffffff;
+    border-left: 5px solid #ffffff;
+    border-right: 5px solid #ffffff;
+    border-bottom: 5px solid #ffffff;
+} 
+
+
+.footer {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+
+.pie {
+    text-align: center;
+}
+
+.pie a {
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: o 10px;
+    letter-spacing: 2px;
 }
