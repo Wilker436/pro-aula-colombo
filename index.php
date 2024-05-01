@@ -21,6 +21,10 @@
 
 
     <title>SenderoDeNomada</title>
+
+    <!-- swipper css -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    
 </head>
 
 <body>
@@ -89,20 +93,49 @@
 
             </div>
 
-
+            <h1 class="o">Opiniones</h1>
             <div class="reseña">
                 <div class="DejarReseña">
-                    <h1 class="rsñ">Deja tu reseña sobre nosotros</h1>
+                    <h1 class="rsñ">Deja tu opinion sobre nosotros</h1>
                     <form action="php/Reseña.php" method="post" class="formularioReseñas">
                         Deje su nombre: <input type="text" name="Nombre" required placeholder="Ej: Juan Esteban" class="textarea">
                         <br>
-                        Deje su reseña:   <input type="text" name="Reseña" required placeholder="Ej: Lorem ipsum dolor sit amet." class="textarea2">
+                        Deje su opinion: <input type="text" name="Reseña" required placeholder="Ej: Lorem ipsum dolor sit amet." class="textarea2">
                         <br>    
-                        <center><input type="submit" value="Dejar reseña" class="submit-btn"></center>
+                        
+                        <center><input type="submit" value="Dejar opinion" class="submit-btn"></center>
                     </form>
                 </div>
+                
+                <div class="container swiper">
+                    <div class="slide-container">
+                        <div class="card-wrapper swiper-wrapper">
+                            <?php
+                                include 'php/database.php';
+                            
+                                $query = "SELECT nombre, opiniones FROM resenas";
 
-                <div class="CajaDeReseñas"></div>
+                                $result = mysqli_query($conexion, $query) or die(mysqli_error($conexion));
+
+                                while ($row = mysqli_fetch_array($result, MYSQLI_BOTH)) {
+                                    
+                                    echo "<div class='card swiper-slide'>";
+                                    echo "<h1 class='H1N'> Reseña de: " . $row['nombre'] . "</h1>";
+                                    echo "<img src='imagenes/chat.png' alt='' class='imagenR'>";
+                                    echo "<p class='Opi'>" . $row['opiniones'] . "</p>";
+                                    echo "</div>";
+                                }
+                                
+                            ?>
+                        </div>  
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>  
+                    </div>  
+                </div>
+
+                <script src="swiper-bundle.min.js"></script>
+                <script src="script.js"></script>
             </div>
 
             <div class="aventuras">

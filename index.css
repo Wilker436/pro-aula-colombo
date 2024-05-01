@@ -259,10 +259,13 @@ h3{
 
 .reseña {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     margin-left: 2%;
     margin-right: 2%;
-
+    padding: 15px;
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
 }
 .DejarReseña{
     padding-top: 10px;
@@ -270,6 +273,46 @@ h3{
     width: 600px;
     height: 450px;
     color: #5F6F52;
+}
+.o{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+.container{
+    margin-left: 50px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+
+.card{
+    height: 450px;
+    background: #ecf0d5;
+    color: #5F6F52;
+}
+
+.H1N{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.Opi{
+    font-size: 20px;
+    color: #000;
+    background-color:#ffffff ;
+    margin-left: 5%;
+    margin-right: 5%;
+    height:200px;
+    padding: 2%;
+    border-radius: 10%;
+    margin-bottom: 18px;
+}
+
+.imagenR{
+    margin-left: 450px;
 }
 
 .formularioReseñas{
@@ -299,6 +342,7 @@ h3{
     background: #D3E4CD;
     color: #5F6F52;
 }
+
 
 .footer {
     background: #000;

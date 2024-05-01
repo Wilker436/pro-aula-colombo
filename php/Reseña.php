@@ -12,14 +12,14 @@ $resena = $_POST['Reseña'];
         echo '
             <script>
                 alert("resena almacenada correctamente!");
-                window.location = "../index.html";
+                window.location = "../index.php";
             </script>
         ';
     } else {
         echo '
             <script>
                 alert("Ha ocurrido un error al intentar almacenar la resena.");
-                window.location = "../index.html";
+                window.location = "../index.php";
             </script>
         ';
     }
