@@ -371,9 +371,10 @@ a {
 }
 
 .lideres img{
-    width: 70%;
+    width: 80%;
     height: auto;
-    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
     border-radius: 100%;
     border-top: 5px solid #ffffff;
     border-left: 5px solid #ffffff;
