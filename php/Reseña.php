@@ -2,23 +2,23 @@
 include 'database.php';
 
 $Nombre = $_POST['Nombre'];
-$Reseña = $_POST['Reseña'];
+$resena = $_POST['Reseña'];
 
-    $stm = mysqli_prepare($conexion, "INSERT INTO `reseñas guardadas` (nombre, Reseña) VALUES (?, ?)");
+    $stm = mysqli_prepare($conexion, "INSERT INTO `resenas` (nombre, opiniones) VALUES (?, ?)");
 
-    mysqli_stmt_bind_param($stm, 'ss', $Nombre, $Reseña);
+    mysqli_stmt_bind_param($stm, 'ss', $Nombre, $resena);
     $ejecutar = mysqli_stmt_execute($stm);
     if($ejecutar){
         echo '
             <script>
-                alert("Reseña almacenada correctamente!");
+                alert("resena almacenada correctamente!");
                 window.location = "../index.html";
             </script>
         ';
     } else {
         echo '
             <script>
-                alert("Ha ocurrido un error al intentar almacenar la reseña.");
+                alert("Ha ocurrido un error al intentar almacenar la resena.");
                 window.location = "../index.html";
             </script>
         ';
