@@ -112,7 +112,7 @@ a {
     font-size: 40px;
     color: #ffffff;
     overflow: hidden;
-    border-right: .15em solid #5F6F52; 
+    border-right: .15em solid #678EAA; 
     white-space: nowrap;
     margin: 0 auto; 
     letter-spacing: .15em; 
@@ -131,7 +131,7 @@ a {
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #5F6F52 }
+    50% { border-color: #678EAA }
   }
 /*  */
 
@@ -153,13 +153,13 @@ a {
     flex: 2 1 auto;
     display: flex;
     flex-flow: row wrap;  
-    background: #ecf0d5;
+    background: #83afce;
     padding-top: 40px;
     height: 400px;
     width: 45%;
     margin-left: 40px;
     margin-right: 40px;
-    border-radius: 5%;
+    border-radius: 20px;
     border-top: 5px solid #ffffff;
     border-left: 5px solid #ffffff;
     border-right: 5px solid #ffffff;
@@ -168,7 +168,7 @@ a {
 }
 
 .textx{
-    color: #5F6F52;
+    color: #ffffff;
     font-size: 10px;
     letter-spacing: 1px;
 
@@ -177,7 +177,7 @@ a {
 .h11{
     padding-top: 40px;
     font-size: 35px;
-    color: #5F6F52;
+    color: #ffffff;
     text-align: center;
 }
 .p2{
@@ -268,10 +268,8 @@ a {
     opacity: 1;
 }
 
-
-
 .im2{
-    width: 700px;
+    width: 600px;
     height: auto;
     border-radius: 8px;
     margin-left: 13%;
@@ -302,14 +300,14 @@ a {
 }
 
 .h1Objetivos{
-    font-size: 35px;
+    font-size: 50px;
     color: #ffffff;
     text-align: center;
     
 }
 .Parrafo-objetivos{
     font-size: 20px;
-    color: #5F6F52;
+    color: #ffffff;
     text-align: justify;
     margin-top: 10px;
     margin-left: 10px;
@@ -319,8 +317,8 @@ a {
 
 .obj{
     padding: 8px;
-    margin: 5px;
-    background: #ecf0d5;
+    margin: 10px;
+    background: #83afce;
     border-radius: 8px;
     border-top: 5px solid #ffffff;
     border-left: 5px solid #ffffff;
@@ -329,7 +327,7 @@ a {
 }
 
 .h1lideres{
-    font-size: 35px;
+    font-size: 50px;
     color: #ffffff;
     text-align: center;
     margin-top: 4%;
@@ -345,9 +343,10 @@ a {
 }
 
 .lideres{
-    background: #ecf0d5;
-    border: 1px solid #5F6F52;
-    color: #5F6F52;
+    background: #83afce;
+    border: 1px solid #7c868d;
+    color: #ffffff;
+    text-align: center;
     margin-top: 2%;
     margin-left: 2%;
     padding: 10px;
@@ -356,17 +355,10 @@ a {
     border-left: 5px solid #ffffff;
     border-right: 5px solid #ffffff;
     border-bottom: 5px solid #ffffff;
-    box-shadow: 10px 10px rgb(162, 190, 162);
+    box-shadow: 10px 10px rgb(138, 153, 163);
     width: 450px; 
     height: 600px;
     box-sizing: border-box;
-
-}
-
-.lideres h2{
-    text-align: center;
-    font-weight: 700;
-    color: #5F6F52;
 
 }
 
