@@ -286,11 +286,10 @@ a {
 }
 
 .contenedorObjetivos{
-    margin-top: 10px;
     flex: 2 1 auto;
     display: flex;
     flex-flow: column;  
-    padding-top: 40px;
+    padding-top: 5px;
     height: 400px;
     width: 45%;
     margin-left: 40px;
@@ -300,7 +299,7 @@ a {
 }
 
 .h1Objetivos{
-    font-size: 50px;
+    font-size: 40px;
     color: #ffffff;
     text-align: center;
     
@@ -317,7 +316,7 @@ a {
 
 .obj{
     padding: 8px;
-    margin: 10px;
+    margin: 6px;
     background: #83afce;
     border-radius: 8px;
     border-top: 5px solid #ffffff;
