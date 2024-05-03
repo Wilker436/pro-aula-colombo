@@ -90,6 +90,28 @@
 
 
             <div class="excursiones">
+                
+                 <?php
+                    include 'php/database.php';
+                            
+                    $query = "SELECT Nombre, lider, fecha, precio, imagen, cupos FROM destinos";
+
+                    $result = mysqli_query($conexion, $query) or die(mysqli_error($conexion));
+
+                    while ($row = mysqli_fetch_array($result, MYSQLI_BOTH)) {
+                                    
+                        echo "<div class='excursion'>";
+                        echo "<h1 class=''>" . $row['Nombre'] . "</h1>";
+                        echo "<img src='imagenes/Destinos/" . $row['imagen'] . "' alt='' class='imagenE'>";
+                        echo "<h2 class=''> Lider a cargo:" . $row['lider'] . "</h2>";
+                        echo "<h2 class=''> Fecha: " . $row['fecha'] . "</h2>";
+                        echo "<h2 class=''> Precio: " . $row['precio'] . "</h2>";
+                        echo "<h2 class=''> Cupos disponibles: " . $row['cupos'] . "</h2>";
+                        echo "</div>";
+                                }
+                                
+                  ?>
+
 
             </div>
 

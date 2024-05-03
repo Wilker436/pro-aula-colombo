@@ -314,7 +314,9 @@ h3{
 .imagenR{
     margin-left: 450px;
 }
-
+.imagenE{
+    max-width: 400px;
+}
 .formularioReseñas{
     font-size: 18px;
     text-align: left;
