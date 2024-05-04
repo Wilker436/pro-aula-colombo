@@ -210,6 +210,7 @@
                     Ingrese su Contraseña: <input type="password" name="contrasena" required placeholder="**********" class="textarea">
                 </label> 
                 <br>
+                
                 <button type="submit" class="submit-btn"> registrarse </button>
 
             </form>
