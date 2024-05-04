@@ -160,11 +160,7 @@ a {
     margin-left: 40px;
     margin-right: 40px;
     border-radius: 20px;
-    border-top: 5px solid #ffffff;
-    border-left: 5px solid #ffffff;
-    border-right: 5px solid #ffffff;
-    border-bottom: 5px solid #ffffff;
-    
+    border: 5px solid #ffffff;
 }
 
 .textx{
@@ -231,10 +227,7 @@ a {
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
     border-radius: 8px;
-    border-top: 5px solid #ffffff;
-    border-left: 5px solid #ffffff;
-    border-right: 5px solid #ffffff;
-    border-bottom: 5px solid #ffffff;
+    border: 5px solid #ffffff;
 }
 
 
@@ -273,10 +266,7 @@ a {
     height: auto;
     border-radius: 8px;
     margin-left: 13%;
-    border-top: 5px solid #ffffff;
-    border-left: 5px solid #ffffff;
-    border-right: 5px solid #ffffff;
-    border-bottom: 5px solid #ffffff;
+    border: 5px solid #ffffff;
 }
 
 .contenedorImagen{
@@ -308,10 +298,7 @@ a {
     font-size: 20px;
     color: #ffffff;
     text-align: justify;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 .obj{
@@ -319,10 +306,7 @@ a {
     margin: 6px;
     background: #83afce;
     border-radius: 8px;
-    border-top: 5px solid #ffffff;
-    border-left: 5px solid #ffffff;
-    border-right: 5px solid #ffffff;
-    border-bottom: 5px solid #ffffff;
+    border: 5px solid #ffffff;
 }
 
 .h1lideres{
@@ -350,10 +334,7 @@ a {
     margin-left: 2%;
     padding: 10px;
     border-radius: 20px ;
-    border-top: 5px solid #ffffff;
-    border-left: 5px solid #ffffff;
-    border-right: 5px solid #ffffff;
-    border-bottom: 5px solid #ffffff;
+    border: 5px solid #ffffff;
     box-shadow: 10px 10px rgb(138, 153, 163);
     width: 450px; 
     height: 600px;
@@ -367,10 +348,7 @@ a {
     margin-top: 10px;
     margin-bottom: 15px;
     border-radius: 100%;
-    border-top: 5px solid #ffffff;
-    border-left: 5px solid #ffffff;
-    border-right: 5px solid #ffffff;
-    border-bottom: 5px solid #ffffff;
+    border: 5px solid #ffffff;
 } 
 
 

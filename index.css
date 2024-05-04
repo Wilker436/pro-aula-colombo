@@ -71,10 +71,10 @@ a {
     letter-spacing: 2px;
 }
 
-.nav .here{
+.nav .here {
     color: #ffffff;
     text-decoration: underline overline #ffffff 3px;
-    
+
 }
 
 
@@ -100,10 +100,10 @@ a {
 
 /* */
 
-.new-Body{ 
-  padding-top: 5em;
-  display: flex;
-  justify-content: center;
+.new-Body {
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -112,47 +112,60 @@ a {
     font-size: 40px;
     color: #fff;
     overflow: hidden;
-    border-right: .15em solid #5F6F52; 
+    border-right: .15em solid #5F6F52;
     white-space: nowrap;
-    margin: 0 auto; 
-    letter-spacing: .15em; 
-    animation: 
-      typing 3.5s steps(30, end),
-      blink-caret .5s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #5F6F52 }
-  }
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #5F6F52
+    }
+}
+
 /*  */
 
-.principal{
-    height: 1800px;
+.principal {
+    height: 2300px;
     color: white;
 }
 
 
-.contenedor{
+.contenedor {
     flex: 2 1 auto;
     display: flex;
-    flex-flow: row wrap;  
+    flex-flow: row wrap;
     background: #ecf0d5;
     padding-top: 40px;
     margin-left: 2%;
     margin-right: 2%;
     height: 570px;
-    
+
 }
 
-.imagen{
+.imagen {
     height: 300px;
     width: 300px;
     margin-left: 100px;
@@ -163,13 +176,13 @@ a {
 
 }
 
-.imagen img{
+.imagen img {
     height: 450px;
     width: 450px;
     border-radius: 90px 20px;
 }
 
-.textx{
+.textx {
     margin-left: -300px;
     height: 300px;
     width: auto;
@@ -179,7 +192,7 @@ a {
     flex: 1 1 40%;
 }
 
-.h11{
+.h11 {
     padding-top: 40px;
     padding-right: 100px;
     font-size: 35px;
@@ -188,18 +201,21 @@ a {
 
 
 }
-.p2{
+
+.p2 {
     padding-right: 100px;
     padding-top: 30px;
     font-size: 25px;
     text-align: justify;
     letter-spacing: 0.01px;
 }
-.ab{
+
+.ab {
     padding-right: 100px;
     margin-top: 60px;
 }
-.ab a{
+
+.ab a {
     padding: 5px 15px;
     font-size: 30px;
     color: #FAFFE4;
@@ -209,12 +225,82 @@ a {
     cursor: pointer;
 }
 
-.ab a:hover{
+.ab a:hover {
     background: #D3E4CD;
     color: #5F6F52;
 }
 
-.aventuras{
+.ED {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.excursiones {
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.excursion {
+    background: #ecf0d5;
+    padding-top: 40px;
+    margin: 35px;
+    height: 570px;
+    width: 404px;
+    color: #5F6F52;
+    border: 5px solid #fff;
+
+}
+
+.excursion h1 {
+    text-align: center;
+
+}
+
+.excursion h2 {
+    text-align: left;
+    padding: 4px;
+}
+
+.excursion .center {
+    text-align: center;
+}
+
+hr {
+    border-top: 4px solid #ffffff;
+}
+
+.imagenE {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    max-width: 394px;
+    max-height: 300;
+}
+
+.excursion a {
+    margin-top: 40px;
+    padding: 5px 15px;
+    font-size: 20px;
+    color: #FAFFE4;
+    background: #5F6F52;
+    letter-spacing: 2px;
+    border-radius: 90px 20px;
+    cursor: pointer;
+}
+
+.excursion a:hover {
+    background: #D3E4CD;
+    color: #5F6F52;
+}
+
+.excursionnn {
+    margin: 20px;
+    text-align: center;
+}
+
+.aventuras {
     margin-top: 40px;
     background: #ecf0d5;
     padding-top: 40px;
@@ -226,12 +312,12 @@ a {
     align-items: center;
 }
 
-.prox{
+.prox {
     font-size: 40px;
     text-align: center;
 }
 
-h3{
+h3 {
     margin-top: 20px;
     font-size: 20px;
     text-align: center;
@@ -249,7 +335,7 @@ h3{
 .textarea2 {
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius:90px 20px;
+    border-radius: 90px 20px;
     width: 300px;
     height: 200px;
     margin-top: 20px;
@@ -267,66 +353,59 @@ h3{
     display: flex;
     flex-flow: row wrap;
 }
-.DejarReseña{
+
+.DejarReseña {
     padding-top: 10px;
     background: #ecf0d5;
     width: 600px;
     height: 450px;
     color: #5F6F52;
 }
-.o{
-    margin-top: 50px;
-    text-align: center;
-    font-size: 30px;
-}
-.container{
+
+.container {
     margin-left: 50px;
     max-width: 1100px;
     width: 100%;
 }
 
 
-.card{
+.card {
     height: 450px;
     background: #ecf0d5;
     color: #5F6F52;
 }
 
-.H1N{
+.H1N {
     text-align: center;
     font-size: 25px;
     margin-top: 40px;
     margin-bottom: 25px;
 }
 
-.Opi{
+.Opi {
     font-size: 20px;
     color: #000;
-    background-color:#ffffff ;
+    background-color: #ffffff;
     margin-left: 5%;
     margin-right: 5%;
-    height:200px;
+    height: 200px;
     padding: 2%;
-    border-radius:  60px 20px;
+    border-radius: 60px 20px;
     margin-bottom: 18px;
 }
 
-.imagenR{
+.imagenR {
     margin-left: 450px;
 }
-.imagenE{
-    max-width: 400px;
-}
-.formularioReseñas{
+
+
+.formularioReseñas {
     font-size: 18px;
     text-align: left;
-    padding-left: 30px ;
+    padding-left: 30px;
 }
 
-
-
-
-.rsñ{
+.rsñ {
     font-size: 28px;
     text-align: center;
 }
@@ -340,6 +419,7 @@ h3{
     border-radius: 90px 20px;
     cursor: pointer;
 }
+
 .submit-btn:hover {
     background: #D3E4CD;
     color: #5F6F52;

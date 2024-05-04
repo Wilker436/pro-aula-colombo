@@ -89,6 +89,8 @@
             </div>
 
 
+            <h1 class="ED"> ꕤ Excursiones Destacadas ꕤ</h1>
+
             <div class="excursiones">
                 
                  <?php
@@ -99,14 +101,18 @@
                     $result = mysqli_query($conexion, $query) or die(mysqli_error($conexion));
 
                     while ($row = mysqli_fetch_array($result, MYSQLI_BOTH)) {
-                                    
                         echo "<div class='excursion'>";
-                        echo "<h1 class=''>" . $row['Nombre'] . "</h1>";
+                        echo "<h1 class=''>ꕤ " . $row['Nombre'] . " ꕤ</h1>";
                         echo "<img src='imagenes/Destinos/" . $row['imagen'] . "' alt='' class='imagenE'>";
-                        echo "<h2 class=''> Lider a cargo:" . $row['lider'] . "</h2>";
+                        echo "<h2 class='center'> " . $row['lider'] . "</h2>";
+                        echo "<hr>";
                         echo "<h2 class=''> Fecha: " . $row['fecha'] . "</h2>";
                         echo "<h2 class=''> Precio: " . $row['precio'] . "</h2>";
                         echo "<h2 class=''> Cupos disponibles: " . $row['cupos'] . "</h2>";
+                        echo "<hr>";
+                        echo "<div class='excursionnn'>";
+                        echo "<a href='excursion.hmtl'>Más Información</a>";
+                        echo "</div>";
                         echo "</div>";
                                 }
                                 
@@ -115,7 +121,6 @@
 
             </div>
 
-            <h1 class="o">Opiniones</h1>
             <div class="reseña">
                 <div class="DejarReseña">
                     <h1 class="rsñ">Deja tu opinion sobre nosotros</h1>
