@@ -183,10 +183,39 @@
 
        
         <dialog id="modal">
-            <h1>hola soy un modal</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, sapiente eaque voluptatibus quisquam ipsam molestias!</p>
-            <button id="btn-cerrar-modal"> Cerrar modal</button>
+            <h1>Inicio de Sesión</h1>
+            <form method="dialog" >
+                <label> 
+                    Ingrese su Email: <input type="email" name="correo" required placeholder="Ej: SenderoNomada@gmail.com" class="textarea">
+                </label>   
+                <br>
+                <label> 
+                    Ingrese su Contraseña: <input type="password" name="contrasena" required placeholder="**********" class="textarea">
+                </label> 
+                <br>
+                <button type="submit" class="submit-btn"> Iniciar </button>
+
+            </form>
+            <a href="#" id="btn-cerrar-modal" class="anclaM">Registrarse</a>
         </dialog>
+
+        <dialog id="modal2">
+            <h1>Registrarse</h1>
+            <form method="dialog" >
+                <label> 
+                    Ingrese su Email: <input type="email" name="correo" required placeholder="Ej: SenderoNomada@gmail.com" class="textarea">
+                </label>   
+                <br>
+                <label> 
+                    Ingrese su Contraseña: <input type="password" name="contrasena" required placeholder="**********" class="textarea">
+                </label> 
+                <br>
+                <button type="submit" class="submit-btn"> registrarse </button>
+
+            </form>
+        </dialog>
+
+
 
         <script>
             const btnAbrirModal =
@@ -198,12 +227,17 @@
             const Modal =
             document.querySelector("#modal");
 
+            const Modal2 =
+            document.querySelector("#modal2");
+
             btnAbrirModal.addEventListener("click", ()=>{
                 Modal.showModal();
             });
 
             btnCerrarModal.addEventListener("click", ()=>{
                 Modal.close();
+                Modal2.showModal();
+
             });
         </script>
     
