@@ -425,6 +425,9 @@ h3 {
     color: #5F6F52;
 }
 
+#modal::backdrop{
+    background: rgba(0, 0, 0, 0.78);
+}
 
 .footer {
     background: #000;

@@ -1,0 +1,229 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.div-padre {
+    display: flex;
+    flex-flow: column nowrap;
+    background: url(imagenes/excursiones.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+}
+
+.margen-interno {
+    padding: 0 50px;
+}
+
+.header {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 300px;
+}
+
+
+.menu {
+    background: rgba(0, 0, 0, 0.78);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 120px;
+}
+
+.logo {
+    flex: 1 1 auto;
+}
+
+.logo img {
+    padding-top: 10px;
+    max-width: 30%;
+    height: 30%;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 30px;
+}
+
+.nav {
+    flex: 5 1 auto;
+}
+
+.nav a {
+    color: #83afce;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+
+.nav .here{
+    color: #ffffff;
+    text-decoration: underline overline #ffffff 3px;
+    
+}
+
+
+.nav a:hover {
+    color: #fff;
+}
+
+
+.social {
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.social a {
+    color: #83afce;
+    padding: 0 5px;
+}
+
+.social a:hover {
+    color: #ffffff;
+}
+
+
+/* */
+
+.new-Body{ 
+  padding-top: 3.5em;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.typewriter h1 {
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    font-size: 40px;
+    color: #ffffff;
+    overflow: hidden;
+    border-right: .15em solid #678EAA; 
+    white-space: nowrap;
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+
+   
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #FFF}
+  }
+
+  
+.principal{
+    height: 3850px;
+    color: white;
+}
+
+.excursiones {
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+.excursion {
+    background:#83afce;
+    padding-top: 10px;
+    margin: 35px;
+    height: 570px;
+    width: 480px;
+    color: #fff;
+    border: 5px solid #fff;
+    border-radius: 20px ;
+    box-shadow: 10px 10px #355773;
+    box-sizing: border-box;
+
+
+}
+
+.excursion h1 {
+    text-align: center;
+
+}
+
+.excursion h2 {
+    text-align: left;
+    padding: 4px;
+}
+
+.excursion .center {
+    text-align: center;
+}
+
+hr {
+    border-top: 4px solid #ffffff;
+}
+
+.imagenE {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    max-width: 470px;
+    max-height: 300;
+}
+
+.excursion a {
+    margin-top: 40px;
+    padding: 5px 15px;
+    font-size: 20px;
+    color: #fff;
+    background: #355773;
+    letter-spacing: 2px;
+    border-radius: 90px 20px;
+    cursor: pointer;
+}
+
+.excursion a:hover {
+    background: #fff;
+    color: #355773;
+}
+
+.excursionnn {
+    margin: 20px;
+    text-align: center;
+}
+
+.footer {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+
+.pie {
+    text-align: center;
+}
+
+.pie a {
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: o 10px;
+    letter-spacing: 2px;
+}

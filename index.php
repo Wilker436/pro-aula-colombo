@@ -40,8 +40,8 @@
                  
                     <a href="Index.html" class="here">Inicio</a>
                     <a href="nosotros.html">Nosotros</a>
-                    <a href="#">Excursiones</a>
-                    <a href="#">Cuenta</a>
+                    <a href="excursion.php">Excursiones</a>
+                    <a href="#"  id="btn-abrir-modal" >Cuenta</a>
                 </div>
 
                 <div class="social">
@@ -96,7 +96,7 @@
                  <?php
                     include 'php/database.php';
                             
-                    $query = "SELECT Nombre, lider, fecha, precio, imagen, cupos FROM destinos";
+                    $query = "SELECT Nombre, lider, fecha, precio, imagen, cupos FROM destinos  WHERE Nombre='Islandia' OR Nombre='Australia' OR Nombre='Tailandia' OR Nombre='Israel'";
 
                     $result = mysqli_query($conexion, $query) or die(mysqli_error($conexion));
 
@@ -111,7 +111,7 @@
                         echo "<h2 class=''> Cupos disponibles: " . $row['cupos'] . "</h2>";
                         echo "<hr>";
                         echo "<div class='excursionnn'>";
-                        echo "<a href='excursion.hmtl'>Más Información</a>";
+                        echo "<a href='excursion.php'>Más Información</a>";
                         echo "</div>";
                         echo "</div>";
                                 }
@@ -180,6 +180,33 @@
             </div>
 
         </section>
+
+       
+        <dialog id="modal">
+            <h1>hola soy un modal</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, sapiente eaque voluptatibus quisquam ipsam molestias!</p>
+            <button id="btn-cerrar-modal"> Cerrar modal</button>
+        </dialog>
+
+        <script>
+            const btnAbrirModal =
+            document.querySelector("#btn-abrir-modal");
+
+            const btnCerrarModal =
+            document.querySelector("#btn-cerrar-modal");
+
+            const Modal =
+            document.querySelector("#modal");
+
+            btnAbrirModal.addEventListener("click", ()=>{
+                Modal.showModal();
+            });
+
+            btnCerrarModal.addEventListener("click", ()=>{
+                Modal.close();
+            });
+        </script>
+    
 
         <footer class="footer margen-interno">
             <nav class="pie">
