@@ -478,6 +478,15 @@ h3 {
     padding-bottom: 20px;
 }
 
+.textarea1 {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 90px 20px;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
 .footer {
     background: #000;
     display: flex;

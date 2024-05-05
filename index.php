@@ -38,7 +38,7 @@
 
                 <div class="nav">
                  
-                    <a href="Index.html" class="here">Inicio</a>
+                    <a href="Index.php" class="here">Inicio</a>
                     <a href="nosotros.html">Nosotros</a>
                     <a href="excursion.php">Excursiones</a>
                     <a href="#"  id="btn-abrir-modal" >Cuenta</a>
@@ -186,11 +186,11 @@
             <h1>Inicio de Sesión</h1>
             <form method="dialog" >
                 <label> 
-                    Ingrese su Email: <input type="email" name="correo" required placeholder="Ej: SenderoNomada@gmail.com" class="textarea">
+                    Ingrese su Email: <input type="email" name="correo" required placeholder="Ej: SenderoNomada@gmail.com" class="textarea1">
                 </label>   
                 <br>
                 <label> 
-                    Ingrese su Contraseña: <input type="password" name="contrasena" required placeholder="**********" class="textarea">
+                    Ingrese su Contraseña: <input type="password" name="contrasena" required placeholder="**********" class="textarea1">
                 </label> 
                 <br>
                 <button type="submit" class="submit-btn"> Iniciar </button>
@@ -203,11 +203,11 @@
             <h1>Registrarse</h1>
             <form method="dialog" >
                 <label> 
-                    Ingrese su Email: <input type="email" name="correo" required placeholder="Ej: SenderoNomada@gmail.com" class="textarea">
+                    Ingrese su Email: <input type="email" name="correo" required placeholder="Ej: SenderoNomada@gmail.com" class="textarea1">
                 </label>   
                 <br>
                 <label> 
-                    Ingrese su Contraseña: <input type="password" name="contrasena" required placeholder="**********" class="textarea">
+                    Ingrese su Contraseña: <input type="password" name="contrasena" required placeholder="**********" class="textarea1">
                 </label> 
                 <br>
                 
