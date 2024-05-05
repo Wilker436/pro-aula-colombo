@@ -123,11 +123,11 @@
 
             <div class="reseña">
                 <div class="DejarReseña">
-                    <h1 class="rsñ">Deja tu opinion sobre nosotros</h1>
+                    <h1 class="rsñ">Deja tu reseña sobre nosotros</h1>
                     <form action="php/Reseña.php" method="post" class="formularioReseñas">
                         Deje su nombre: <input type="text" name="Nombre" required placeholder="Ej: Juan Esteban" class="textarea">
                         <br>
-                        Deje su opinion: <input type="text" name="Reseña" required placeholder="Ej: Lorem ipsum dolor sit amet." class="textarea2">
+                        Deje su reseña: <input type="text" name="Reseña" required placeholder="Ej: Lorem ipsum dolor sit amet." class="textarea2">
                         <br>    
                         
                         <center><input type="submit" value="Dejar opinion" class="submit-btn"></center>
