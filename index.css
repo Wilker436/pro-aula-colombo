@@ -429,6 +429,54 @@ h3 {
     color: #5F6F52;
 }
 
+#modal::backdrop{
+    background: rgba(0, 0, 0, 0.78);
+}
+
+#modal2::backdrop{
+    background: rgba(0, 0, 0, 0.78);
+}
+#modal{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 100px;
+    left: 700px;
+    background: #ecf0d5;
+    color: #5F6F52;;
+    border-radius: 20px ;
+    border: 5px solid #5F6F52;
+    padding: 50px;
+    font-size: 20px; 
+}
+
+#modal h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.anclaM{
+   margin-left: 75%;
+}
+
+#modal2{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 100px;
+    left: 700px;
+    background: #ecf0d5;
+    color: #5F6F52;;
+    border-radius: 20px ;
+    border: 5px solid #5F6F52;
+    padding: 50px;
+    font-size: 20px; 
+}
+
+#modal2 h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
 
 .footer {
     background: #000;

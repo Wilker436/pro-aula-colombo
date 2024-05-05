@@ -18,7 +18,7 @@ a {
 .div-padre {
     display: flex;
     flex-flow: column nowrap;
-    background: url(imagenes/kace-rodriguez-p3OzJuT_Dks-unsplash.jpg);
+    background: url(imagenes/excursiones.jpg);
     background-position: center;
     background-attachment: contain;
     background-size: cover;
@@ -131,225 +131,84 @@ a {
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #678EAA }
+    50% { border-color: #FFF}
   }
-/*  */
 
+  
 .principal{
-    height: 3500px;
+    height: 3850px;
     color: white;
 }
 
-.informacion{
+.excursiones {
     flex: 2 1 auto;
     display: flex;
     flex-flow: row wrap;
-    padding-top: 5%;
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
-.contenedor{
-    flex: 2 1 auto;
-    display: flex;
-    flex-flow: row wrap;  
-    background: #83afce;
-    padding-top: 40px;
-    height: 400px;
-    width: 45%;
-    margin-left: 40px;
-    margin-right: 40px;
-    border-radius: 20px;
-    border: 5px solid #ffffff;
-}
-
-.textx{
-    color: #ffffff;
-    font-size: 10px;
-    letter-spacing: 1px;
+    justify-content: center;
 
 }
 
-.h11{
-    padding-top: 40px;
-    font-size: 35px;
-    color: #ffffff;
-    text-align: center;
-}
-.p2{
-    padding-top: 30px;
-    margin-bottom: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 20px;
-    text-align: justify;
-    letter-spacing: 0.01px;
-}
-
-.container{
-    padding: 2rem;
-    flex: 2 1 auto;
-    display: flex;
-    flex-flow: row wrap;
-    padding-top: 5%;
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
-.texto-Excursiones{
-    flex: 2 1 auto;
-    display: flex;
-    flex-flow: row wrap;
-    margin-top: 250px;
-    font-size: 28px;
-    margin-left: 100px;
-}
-
- 
-.slider-wrapper{
-    position: relative;
-    max-width: 1000px;
-    margin-top: 40px;
-    flex: 2 1 auto;
-    display: flex;
-    flex-flow: row wrap;
-    margin-left: 120px;
-
-}
-
-.slider{
-    display: flex;
-    aspect-ratio: 1920 / 1200;
-    width: 800px;
-    height: auto;
-    overflow-x: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-    border-radius: 8px;
-    border: 5px solid #ffffff;
-}
-
-
-.slider img{
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
-
-}
-
-.slider-nav{
-    display: flex;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-.slider-nav a{
-    width: 15px;
-    height:15px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-}
-
-.slider-nav a:hover{
-    opacity: 1;
-}
-
-.im2{
-    width: 600px;
-    height: auto;
-    border-radius: 8px;
-    margin-left: 13%;
-    border: 5px solid #ffffff;
-}
-
-.contenedorImagen{
-    flex: 2 1 auto;
-    display: flex;
-    flex-flow: row wrap; 
-}
-
-.contenedorObjetivos{
-    flex: 2 1 auto;
-    display: flex;
-    flex-flow: column;  
-    padding-top: 5px;
-    height: 400px;
-    width: 45%;
-    margin-left: 40px;
-    margin-right: 40px;
-   
-
-}
-
-.h1Objetivos{
-    font-size: 40px;
-    color: #ffffff;
-    text-align: center;
-    
-}
-.Parrafo-objetivos{
-    font-size: 20px;
-    color: #ffffff;
-    text-align: justify;
-    margin: 10px;
-}
-
-.obj{
-    padding: 8px;
-    margin: 6px;
-    background: #83afce;
-    border-radius: 8px;
-    border: 5px solid #ffffff;
-}
-
-.h1lideres{
-    font-size: 50px;
-    color: #ffffff;
-    text-align: center;
-    margin-top: 4%;
-    margin-bottom: 3%;
-}
-
-.container-lideres{
-    flex: 2 1 auto;
-    display: flex;
-    flex-flow: row wrap;
-    width: 90%;
-    padding-left: 150px;
-}
-
-.lideres{
-    background: #83afce;
-    border: 1px solid #7c868d;
-    color: #ffffff;
-    text-align: center;
-    margin-top: 2%;
-    margin-left: 2%;
-    padding: 10px;
+.excursion {
+    background:#83afce;
+    padding-top: 10px;
+    margin: 35px;
+    height: 570px;
+    width: 480px;
+    color: #fff;
+    border: 5px solid #fff;
     border-radius: 20px ;
-    border: 5px solid #ffffff;
-    box-shadow: 10px 10px rgb(138, 153, 163);
-    width: 450px; 
-    height: 600px;
+    box-shadow: 10px 10px #355773;
     box-sizing: border-box;
 
+
 }
 
-.lideres img{
-    width: 80%;
-    height: auto;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    border-radius: 100%;
-    border: 5px solid #ffffff;
-} 
+.excursion h1 {
+    text-align: center;
+
+}
+
+.excursion h2 {
+    text-align: left;
+    padding: 4px;
+}
+
+.excursion .center {
+    text-align: center;
+}
+
+hr {
+    border-top: 4px solid #ffffff;
+}
+
+.imagenE {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    max-width: 470px;
+    max-height: 300;
+}
+
+.excursion a {
+    margin-top: 40px;
+    padding: 5px 15px;
+    font-size: 20px;
+    color: #fff;
+    background: #355773;
+    letter-spacing: 2px;
+    border-radius: 90px 20px;
+    cursor: pointer;
+}
+
+.excursion a:hover {
+    background: #fff;
+    color: #355773;
+}
+
+.excursionnn {
+    margin: 20px;
+    text-align: center;
+}
+
 .textarea {
     padding: 10px;
     border: 1px solid #ccc;

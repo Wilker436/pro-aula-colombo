@@ -40,8 +40,8 @@
                  
                     <a href="Index.html" class="here">Inicio</a>
                     <a href="nosotros.html">Nosotros</a>
-                    <a href="#">Excursiones</a>
-                    <a href="#">Cuenta</a>
+                    <a href="excursion.php">Excursiones</a>
+                    <a href="#"  id="btn-abrir-modal" >Cuenta</a>
                 </div>
 
                 <div class="social">
@@ -96,7 +96,7 @@
                  <?php
                     include 'php/database.php';
                             
-                    $query = "SELECT Nombre, lider, fecha, precio, imagen, cupos FROM destinos";
+                    $query = "SELECT Nombre, lider, fecha, precio, imagen, cupos FROM destinos  WHERE Nombre='Islandia' OR Nombre='Australia' OR Nombre='Tailandia' OR Nombre='Israel'";
 
                     $result = mysqli_query($conexion, $query) or die(mysqli_error($conexion));
 
@@ -111,7 +111,7 @@
                         echo "<h2 class=''> Cupos disponibles: " . $row['cupos'] . "</h2>";
                         echo "<hr>";
                         echo "<div class='excursionnn'>";
-                        echo "<a href='excursion.hmtl'>Más Información</a>";
+                        echo "<a href='excursion.php'>Más Información</a>";
                         echo "</div>";
                         echo "</div>";
                                 }
@@ -180,6 +180,68 @@
             </div>
 
         </section>
+
+       
+        <dialog id="modal">
+            <h1>Inicio de Sesión</h1>
+            <form method="dialog" >
+                <label> 
+                    Ingrese su Email: <input type="email" name="correo" required placeholder="Ej: SenderoNomada@gmail.com" class="textarea">
+                </label>   
+                <br>
+                <label> 
+                    Ingrese su Contraseña: <input type="password" name="contrasena" required placeholder="**********" class="textarea">
+                </label> 
+                <br>
+                <button type="submit" class="submit-btn"> Iniciar </button>
+
+            </form>
+            <a href="#" id="btn-cerrar-modal" class="anclaM">Registrarse</a>
+        </dialog>
+
+        <dialog id="modal2">
+            <h1>Registrarse</h1>
+            <form method="dialog" >
+                <label> 
+                    Ingrese su Email: <input type="email" name="correo" required placeholder="Ej: SenderoNomada@gmail.com" class="textarea">
+                </label>   
+                <br>
+                <label> 
+                    Ingrese su Contraseña: <input type="password" name="contrasena" required placeholder="**********" class="textarea">
+                </label> 
+                <br>
+                
+                <button type="submit" class="submit-btn"> registrarse </button>
+
+            </form>
+        </dialog>
+
+
+
+        <script>
+            const btnAbrirModal =
+            document.querySelector("#btn-abrir-modal");
+
+            const btnCerrarModal =
+            document.querySelector("#btn-cerrar-modal");
+
+            const Modal =
+            document.querySelector("#modal");
+
+            const Modal2 =
+            document.querySelector("#modal2");
+
+            btnAbrirModal.addEventListener("click", ()=>{
+                Modal.showModal();
+            });
+
+            btnCerrarModal.addEventListener("click", ()=>{
+                Modal.close();
+                Modal2.showModal();
+
+            });
+        </script>
+    
 
         <footer class="footer margen-interno">
             <nav class="pie">
