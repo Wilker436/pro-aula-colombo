@@ -1,26 +1,47 @@
 <?php
 include 'database.php';
 
-if (isset($_POST['email'], $_POST['contraseña'])){
-$email = $_POST['correo'];
-$contraseña = $_POST['contrasena'];
+if (isset($_POST['correo'])){
+    $email = $_POST['correo'];
+    $contraseña = $_POST['contrasena'];
 
-$check_query = mysqli_prepare($conexion, "INSERT INTO usuarios (email, contraseña) VALUES (?, ?) ");
-mysqli_stmt_bind_param($check_query, 'ss',$email, $contraseña); // No hash de la contraseña
-$ejecutar = mysqli_stmt_execute($check_query);
+    // Verificar si el correo ya está registrado
+    $check_query = mysqli_prepare($conexion, "SELECT * FROM usuarios WHERE email = ?");
+    mysqli_stmt_bind_param($check_query, 's', $email);
+    mysqli_stmt_execute($check_query);
+    mysqli_stmt_store_result($check_query);
 
-if($ejecutar){
-    echo '
-        <script>
-            alert("Resgitrado con exito!");
-        </script>
-    ';
-} else {
-    echo '
-        <script>
-            alert("No eres tu somos nosotros!");
-        </script>
-    ';
+    if(mysqli_stmt_num_rows($check_query) > 0) {
+        echo '
+            <script>
+                alert("¡El correo ya está registrado!");
+                window.location = "../index.php";
+            </script>
+        ';
+    } else {
+      // El correo no está registrado, procede a insertar los datos
+      $insert_query = mysqli_prepare($conexion, "INSERT INTO usuarios (email, contraseña) VALUES (?, ?)");
+      mysqli_stmt_bind_param($insert_query, 'ss', $email, $contraseña);
+      $ejecutar = mysqli_stmt_execute($insert_query);
+
+      if($ejecutar){
+          echo '
+              <script>
+                  alert("¡Registrado con éxito!");
+                  window.location = "../index.php";
+              </script>
+          ';
+      } else {
+          echo '
+              <script>
+                  alert("¡Ha ocurrido un error al registrar!");
+                  window.location = "../index.php";
+              </script>
+          ';
+      }
+    }
+    mysqli_stmt_close($check_query);
+    mysqli_stmt_close($insert_query);
+    mysqli_close($conexion);
 }
-}
-mysqli_close($conexion);
+?>

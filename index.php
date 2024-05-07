@@ -199,6 +199,7 @@
             <a href="#" id="btn-cerrar-modal" class="anclaM">Registrarse</a>
         </dialog>
 
+        
         <dialog id="modal2">
             <h1>Registrarse</h1>
             <form method="POST" action="php/registroUser.php" >
