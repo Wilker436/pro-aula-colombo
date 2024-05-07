@@ -33,7 +33,7 @@
 
             <div class="menu margen-interno">
                 <div class="logo">
-                    <a href="index.html"><img src="imagenes/004.png" alt=""></a>
+                    <a href="index.php"><img src="imagenes/004.png" alt=""></a>
                 </div>
 
                 <div class="nav">
@@ -184,7 +184,7 @@
        
         <dialog id="modal">
             <h1>Inicio de Sesión</h1>
-            <form method="dialog" >
+            <form method="POST" action="php/login.php">
                 <label> 
                     Ingrese su Email: <input type="email" name="correo" required placeholder="Ej: SenderoNomada@gmail.com" class="textarea1">
                 </label>   
@@ -201,7 +201,7 @@
 
         <dialog id="modal2">
             <h1>Registrarse</h1>
-            <form method="dialog" >
+            <form method="POST" action="php/registroUser.php" >
                 <label> 
                     Ingrese su Email: <input type="email" name="correo" required placeholder="Ej: SenderoNomada@gmail.com" class="textarea1">
                 </label>   

@@ -26,7 +26,7 @@
 
             <div class="menu margen-interno">
                 <div class="logo">
-                    <a href="index.html"><img src="imagenes/004.png" alt=""></a>
+                    <a href="index.php"><img src="imagenes/004.png" alt=""></a>
                 </div>
 
                 <div class="nav">

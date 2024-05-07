@@ -18,7 +18,7 @@ if ($count > 0) {
     echo '
         <script>
             alert("El correo ya está registrado.");
-            window.location = "../index.html";
+            window.location = "../index.php";
         </script>
     ';
 } else {
@@ -29,14 +29,14 @@ if ($count > 0) {
         echo '
             <script>
                 alert("Usuario almacenado correctamente!");
-                window.location = "../index.html";
+                window.location = "../index.php";
             </script>
         ';
     } else {
         echo '
             <script>
                 alert("Ha ocurrido un error al intentar almacenar el usuario.");
-                window.location = "../index.html";
+                window.location = "../index.php";
             </script>
         ';
     }
