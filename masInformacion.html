@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script>
+
+        function obtenerParametro(nombre) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(nombre);
+        }
+
+
+        function cambiarContenido() {
+            const parametro = obtenerParametro('parametro');
+            const banner = document.getElementById('banner');
+
+
+            if (parametro === 'Islandia') {
+        
+            } else {
+                banner.style.backgroundImage = '';
+            }
+        }
+
+
+        window.onload = cambiarContenido;
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="masinformacion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div-padre" id="divpadre">
+        <header class="header">
+
+            <div class="menu margen-interno">
+                <div class="logo">
+                    <a href="index.php"><img src="imagenes/004.png" alt=""></a>
+                </div>
+
+                <div class="nav">
+                 
+                    <a href="Index.php" class="here">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="excursion.php">Excursiones</a>
+                    <a href="#"  id="btn-abrir-modal" >Cuenta</a>
+                </div>
+
+                <div class="social">
+                    <div><a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a></div>
+                    <div><a href="https://www.instagram.com/senderodenomada/"><i class="fa-brands fa-instagram fa-2xl"></i></a></div>
+                </div>
+
+            </div>
+
+            <div class="new-Body">
+                <div class="typewriter">
+                    <br>
+                    <br>
+                    <h1>Tu aventura </h1>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <section class="principal">
+            
+            <div class="Excursion"  id="Excursion">
+                
+                <img src="imagenes/Destinos/i02.jpg" alt="" id="imga" class="imagen">
+
+                <div class="datos" id="datos">
+
+                    <h1 class="h11">ꕤISLANDIAꕤ</h1>
+                        <p class="p2">
+                            -Lider de expedicion: Ruka Yoshida <br>
+                            -Fecha: 2024-07-17 <br>
+                            -Duracion: 1 semana <br>
+                            -Precio: $2100
+                        </p>
+                </div>
+            </div>
+
+            <section class="container">
+
+                <div class="informacion">
+                    <div class="contenedor">
+                        <div class="textx">
+    
+                            <h1 class="h11">Incluidos</h1>
+                            <p class="p2">
+                                -Líder de Expedición<br>
+                                -Alojamiento<br>
+                                -Desayunos, comidas y cenas<br>
+                                -Transportes (incluido avioneta)<br>
+                                -Todo incluido dentro de Amazonas<br>
+                                -Seguro médico<br>
+                                -Grupo de WhatsApp para gestiones, supervisión e información
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contenedor">
+                        <div class="textx">
+    
+                            <h1 class="h11">No Incluidos</h1>
+                            <p class="p2">
+                                -Vuelos<br>
+                                -Transporte aeropuerto<br>
+                                -Gastos personales<br>
+                                -Esquema de vacunacion en caso de ser necesario<br>
+                                -Tramites de visado<br>
+                                -Gastos derivados de sucesos inesperados, ya sean por partes de terceros o de carácter meteorológico (retrasos, cancelaciones, inundaciones, desprendimientos, nevadas, desastres naturales, etc)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+          
+            <section class="container">
+                
+                <div class="texto-Excursiones">
+                    <h1> Lugares a visitar:</h1><br>
+                    <p>
+                        PARQUE NACIONAL THINGVELLIR<br>
+                        CATARATAS DE GULLFOSSɞ<br>
+                        GEYSIR<br>
+                        BLUE LAGOON<br>
+                        PARQUE NACIONAL VATNAJÖKULL<br>
+                        PLAYA DE ARENA NEGRA DE REYNISFJARA<br>
+                    </p>
+
+                </div>
+                
+                <div class="slider-wrapper">
+
+                    <div class="slider" id="slider">
+                        <img id="slide-1" src="imagenes/islandia/1.jpg" alt="">
+                        <img id="slide-2" src="imagenes/islandia/2.jpg" alt="">
+                        <img id="slide-3" src="imagenes/islandia/3.jpg" alt="">
+                        <img id="slide-4" src="imagenes/islandia/4.jpg" alt="">
+                        <img id="slide-5" src="imagenes/islandia/5.jpg" alt="">
+                        <img id="slide-6" src="imagenes/islandia/6.jpg" alt="">
+                        <img id="slide-7" src="imagenes/islandia/7.jpg" alt="">
+                        <img id="slide-8" src="imagenes/islandia/8.jpg" alt="">
+                        <img id="slide-9" src="imagenes/islandia/9.jpg" alt="">
+                        <img id="slide-10" src="imagenes/islandia/10.jpg" alt="">
+                        <img id="slide-11" src="imagenes/islandia/11.jpg" alt="">
+                        <img id="slide-12" src="imagenes/islandia/12.jpg" alt="">
+                        <img id="slide-13" src="imagenes/islandia/13.jpg" alt="">
+                        <img id="slide-14" src="imagenes/islandia/14.jpg" alt="">
+                        <img id="slide-15" src="imagenes/islandia/15.jpg" alt="">
+                        <img id="slide-16" src="imagenes/islandia/16.jpg" alt="">
+                        <img id="slide-17" src="imagenes/islandia/17.jpg" alt="">
+                        <img id="slide-18" src="imagenes/islandia/18.jpg" alt="">
+                        <img id="slide-19" src="imagenes/islandia/19.jpg" alt="">
+                        <img id="slide-20" src="imagenes/islandia/20.jpg" alt="">
+                        <img id="slide-21" src="imagenes/islandia/21.jpg" alt="">
+                    </div>
+                    <div class="slider-nav" >
+                        <a href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                        <a href="#slide-4"></a>
+                        <a href="#slide-5"></a>
+                        <a href="#slide-6"></a>
+                        <a href="#slide-7"></a>
+                        <a href="#slide-8"></a>
+                        <a href="#slide-9"></a>
+                        <a href="#slide-10"></a>
+                        <a href="#slide-11"></a>
+                        <a href="#slide-12"></a>
+                        <a href="#slide-13"></a>
+                        <a href="#slide-14"></a>
+                        <a href="#slide-15"></a>
+                        <a href="#slide-16"></a>
+                        <a href="#slide-17"></a>
+                        <a href="#slide-18"></a>
+                        <a href="#slide-19"></a>
+                        <a href="#slide-20"></a>
+                        <a href="#slide-21"></a>
+                    </div>
+                </div>
+    
+
+            </section>
+
+            <section class="adiconales" id="adicionales">
+                <div class="adi" id="adi">
+
+
+                </div>
+
+
+            </section>
+
+        </section>
+    </div>
+</body>
+</html>
