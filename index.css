@@ -31,8 +31,6 @@ a {
 .header {
     display: flex;
     flex-flow: column nowrap;
-    height: 500px;
-
 }
 
 
@@ -415,18 +413,29 @@ h3 {
 }
 
 .submit-btn {
+    display: block;
+    position: relative;
     padding: 5px 15px;
     font-size: 30px;
     color: #FAFFE4;
     background: #5F6F52;
     letter-spacing: 2px;
     border-radius: 90px 20px;
+    border: none;
     cursor: pointer;
+    box-shadow: 0 4px #46aa22;
 }
 
 .submit-btn:hover {
     background: #D3E4CD;
     color: #5F6F52;
+    box-shadow: 0 4px #46aa22;
+    top: 2px;
+}
+
+.submit-btn:active {
+    box-shadow: none;
+    top: 6px;
 }
 
 #modal::backdrop{

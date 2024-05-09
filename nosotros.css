@@ -135,10 +135,6 @@ a {
   }
 /*  */
 
-.principal{
-    height: 3500px;
-    color: white;
-}
 
 .informacion{
     flex: 2 1 auto;
@@ -323,6 +319,7 @@ a {
     flex-flow: row wrap;
     width: 90%;
     padding-left: 150px;
+    padding-bottom: 30px;
 }
 
 .lideres{

@@ -134,12 +134,6 @@ a {
     50% { border-color: #FFF}
   }
 
-  
-.principal{
-    height: 3850px;
-    color: white;
-}
-
 .excursiones {
     flex: 2 1 auto;
     display: flex;
