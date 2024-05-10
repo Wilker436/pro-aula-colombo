@@ -157,6 +157,7 @@ a {
     margin-right: 40px;
     border-radius: 20px;
     border: 5px solid #ffffff;
+    box-shadow: 10px 10px rgb(138, 153, 163);
 }
 
 .textx{

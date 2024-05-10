@@ -18,7 +18,7 @@ a {
 .div-padre {
     display: flex;
     flex-flow: column nowrap;
-    background: url(imagenes/kace-rodriguez-p3OzJuT_Dks-unsplash.jpg);
+    background: url(imagenes/fondo2.jpg);
     background-position: center;
     background-attachment: contain;
     background-size: cover;
@@ -31,7 +31,7 @@ a {
 .header {
     display: flex;
     flex-flow: column nowrap;
-    height: 400px;
+    height: 300px;
 
 }
 
@@ -110,7 +110,7 @@ a {
 
 .typewriter h1 {
     font-size: 40px;
-    color: #fff;
+    color: #5F6F52;
     overflow: hidden;
     border-right: .15em solid #5F6F52;
     white-space: nowrap;
@@ -148,9 +148,11 @@ a {
 /*  */
 .text-principal {
     padding-top: 40px;
-    margin: auto;
+    margin: 40px auto;
     height: 300px;
     width: 60%;
+    background: #776247;
+    color: #fff;
     border-radius: 20px;
     border: 5px solid #ffffff;
     box-shadow: 10px 10px#c9ab7f;
@@ -196,22 +198,22 @@ a {
     margin-bottom: 15px;
     margin-left: 20px;
     margin-right: 20px;
-    
+
 }
 
 .Excursion {
     flex: 2 1 auto;
     display: flex;
     flex-flow: row wrap;
-    margin-left: 120px;
-    margin-right: 30px;
-    margin-top: 30px;
+    margin: auto;
     padding: 20px;
 }
 
 .imagen {
-    width: 800px;
+    height: 400px;
+    width: 42%;
     margin-right: 30px;
+    margin-left: 110px;
     border-radius: 20px;
     box-sizing: border-box;
     border: 5px solid #ffffff;
@@ -222,14 +224,13 @@ a {
     flex: 2 1 auto;
     display: flex;
     flex-flow: row wrap;
-    padding-top: 5%;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin: auto;
+    padding: 20px;
 }
 
 .contenedor {
     flex-flow: row wrap;
-    background: #83afce;
+    background: #776247;
     padding-top: 40px;
     height: 400px;
     width: 45%;
@@ -237,6 +238,7 @@ a {
     margin-right: 40px;
     border-radius: 20px;
     border: 5px solid #ffffff;
+    box-shadow: 10px 10px#c9ab7f;
 }
 
 .textx {
@@ -247,7 +249,7 @@ a {
 }
 
 .h11 {
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 35px;
     color: #ffffff;
     text-align: center;
@@ -262,20 +264,33 @@ a {
 
 }
 
-li{
+li {
     margin-left: 15px;
+    list-style-type: square ;
+    
 }
 
 .datos {
+    flex-flow: row wrap;
+    background: #776247;
     padding-top: 40px;
+    height: 400px;
+    width: 42%;
+    margin-left: 40px;
+    margin-right: 40px;
     border-radius: 20px;
-    box-sizing: border-box;
     border: 5px solid #ffffff;
+    box-sizing: border-box;
     box-shadow: 10px 10px#c9ab7f;
-    width: 800px;
-    height: 450px;
-
 }
+
+.visitar{
+    margin-top: 100px;
+    font-size: 38px;
+    color: #ffffff;
+    text-align: center;
+}
+
 
 
 .container {
@@ -291,7 +306,16 @@ li{
     margin-top: 150px;
     font-size: 28px;
     margin-left: 100px;
+    width: 700px;
 }
+
+.texto-Excursiones2 {
+    margin-top: 150px;
+    font-size: 28px;
+    margin-left: -50px;
+    width: 700px;
+}
+
 
 
 .slider-wrapper {
@@ -331,10 +355,35 @@ li{
     column-gap: 1rem;
     position: absolute;
     bottom: 1.25rem;
-    left: 45%;
+    left: 47%;
     transform: translateX(-50%);
     z-index: 1;
 }
+
+.slider-nav2 {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 40%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+
+.slider-nav2 a {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav2 a:hover {
+    opacity: 1;
+}
+
 
 .slider-nav a {
     width: 15px;
@@ -347,4 +396,23 @@ li{
 
 .slider-nav a:hover {
     opacity: 1;
+}
+
+.footer {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+
+.pie {
+    text-align: center;
+}
+
+.pie a {
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: o 10px;
+    letter-spacing: 2px;
 }
