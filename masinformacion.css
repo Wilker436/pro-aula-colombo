@@ -18,12 +18,20 @@ a {
 .div-padre {
     display: flex;
     flex-flow: column nowrap;
-    background: url(imagenes/fondo2.jpg);
     background-position: center;
     background-attachment: contain;
     background-size: cover;
 }
 
+.islandia{
+    background: url(imagenes/fondo2.jpg);
+    background-position: 95%;
+}
+
+.Australia{
+    background: url(imagenes/aust.jpg);
+    background-position: 75% 50%;
+}
 .margen-interno {
     padding: 0 50px;
 }
@@ -106,13 +114,24 @@ a {
     justify-content: center;
 }
 
-
-
 .typewriter h1 {
     font-size: 40px;
     color: #5F6F52;
     overflow: hidden;
     border-right: .15em solid #5F6F52;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+.typewriterA h1 {
+    font-size: 40px;
+    color: #ffffff;
+    overflow: hidden;
+    border-right: .15em solid #ffffff;
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .15em;

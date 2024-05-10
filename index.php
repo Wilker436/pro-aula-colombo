@@ -184,20 +184,29 @@
        
         <dialog id="modal">
             <h1>Inicio de Sesión</h1>
-            <form method="POST" action="php/login.php">
+
+            <form method="POST" action="php/controlador.php">
+
+                <?php 
+                     include 'php/database.php';
+                     include 'php/controlador.php';          
+
+                ?>
+
                 <label> 
-                    Ingrese su Email: <input type="email" name="correo" required placeholder="Ej: SenderoNomada@gmail.com" class="textarea1">
+                    Ingrese su Email: <input type="email" name="correo"  placeholder="Ej: SenderoNomada@gmail.com" class="textarea1">
                 </label>   
                 <br>
                 <label> 
-                    Ingrese su Contraseña: <input type="password" name="contrasena" required placeholder="**********" class="textarea1">
+                    Ingrese su Contraseña: <input type="password" name="contrasena"  placeholder="**********" class="textarea1">
                 </label> 
                 <br>
-                <button type="submit" class="submit-btn"> Iniciar </button>
+                <button type="submit" class="submit-btn" name="ingresar"> Iniciar </button>
 
             </form>
-            <a href="#" id="btn-cerrar-modal" class="anclaM">Registrarse</a>
-        </dialog>
+            <a href="#" id="btn-cerrar-modal" class="anclaM" >Registrarse</a> 
+            
+        </dialog> 
 
         
         <dialog id="modal2">
@@ -212,7 +221,7 @@
                 </label> 
                 <br>
                 
-                <button type="submit" class="submit-btn"> registrarse </button>
+                <button type="submit" class="submit-btn" > registrarse </button>
 
             </form>
         </dialog>
