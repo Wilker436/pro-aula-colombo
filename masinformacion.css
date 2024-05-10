@@ -32,6 +32,11 @@ a {
     background: url(imagenes/aust.jpg);
     background-position: 75% 50%;
 }
+
+.Tai{
+    background: url(imagenes/tai.jpg);
+
+}
 .margen-interno {
     padding: 0 50px;
 }
