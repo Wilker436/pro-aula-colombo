@@ -43,6 +43,11 @@ a {
 
 }
 
+.Egipto{
+    background: url(imagenes/egipto.jpg);
+
+}
+
 .margen-interno {
     padding: 0 50px;
 }
