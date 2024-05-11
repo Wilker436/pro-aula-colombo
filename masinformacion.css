@@ -53,6 +53,11 @@ a {
 
 }
 
+.Grecia{
+    background: url(imagenes/grecia.jpg);
+
+}
+
 .margen-interno {
     padding: 0 50px;
 }
