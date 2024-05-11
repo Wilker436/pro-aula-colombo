@@ -44,18 +44,26 @@ a {
 }
 
 .Egipto{
-    background: url(imagenes/egipto.jpg);
-
+    background: url(imagenes/Egipto.jpg) center;
 }
 
 .Kenia{
-    background: url(imagenes/keniaf.jpg);
+    background: url(imagenes/keniaf.jpg) center;
 
 }
 
 .Grecia{
-    background: url(imagenes/grecia.jpg);
+    background: url(imagenes/grecia.jpg) center;
 
+}
+
+.Alaska{
+    background: url(imagenes/alaska.jpg) center;
+
+}
+
+.Noruega{
+    background: url(imagenes/noruega2.jpg) center;
 }
 
 .margen-interno {
@@ -350,7 +358,7 @@ li {
 .texto-Excursiones {
     margin-top: 150px;
     font-size: 28px;
-    margin-left: 100px;
+    margin-left: 90px;
     width: 700px;
 }
 
