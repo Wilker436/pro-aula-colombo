@@ -78,7 +78,7 @@
                        echo "<h2 class=''> Cupos disponibles: " . $row['cupos'] . "</h2>";
                        echo "<hr>";
                        echo "<div class='excursionnn'>";
-                       echo "<a href='excursion.php'>Más Información</a>";
+                       echo "<a href='masInformacion.html?parametro=" . urlencode($row['Nombre']) . "'>Más Información</a>";
                        echo "</div>";
                        echo "</div>";
                                }
