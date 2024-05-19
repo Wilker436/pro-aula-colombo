@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+if (empty($_SESSION["id"])) {
+    header("location: login.php");
+}
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,9 +47,9 @@
                 <div class="nav">
                  
                     <a href="Index.php" class="here">Inicio</a>
-                    <a href="nosotros.html">Nosotros</a>
+                    <a href="nosotros.php">Nosotros</a>
                     <a href="excursion.php">Excursiones</a>
-                    <a href="#"  id="btn-abrir-modal" >Cuenta</a>
+                    <a href="#" id = "btn-abrir-modal">Cuenta</a>; 
                 </div>
 
                 <div class="social">
@@ -62,6 +70,8 @@
             </div>
 
         </header>
+
+        
 
         <section class="principal">
 
@@ -183,47 +193,27 @@
 
        
         <dialog id="modal">
-            <h1>Inicio de Sesión</h1>
+            <?php	
+            echo "<h1 class='bv'>  Bienvenido/a " . $_SESSION["nombres"] . " ". $_SESSION['apellidos']. "</h1> <br>";
 
-            <form method="POST" action="php/controlador.php">
+            echo "
+            <div  class='informacionUsuario'>
+            <h2 class='Infor'>Datos personales</h2>
+            <li>
+                <ol>Correo: ". $_SESSION["email"]."</ol>
+                <ol>Contraseña: ".$_SESSION["contraseña"] ."</ol>
+                <ol>Nacionalidad: ".$_SESSION["Nacionalidad"] ."</ol>
+                <ol>Edad: ".$_SESSION["edad"] . "</ol>
+                <ol>Numero telefonico: ".$_SESSION["celular"] ."</ol>
+            </li>
+            </div>             
+            ";                    
+    
+            ?>
 
-                <?php 
-                     include 'php/database.php';
-                     include 'php/controlador.php';          
+            <br>                    
+            <center><a href="php/controlador_cerrar_session.php" class="submit-btn">Cerrar sesion</a></center>
 
-                ?>
-
-                <label> 
-                    Ingrese su Email: <input type="email" name="correo"  placeholder="Ej: SenderoNomada@gmail.com" class="textarea1">
-                </label>   
-                <br>
-                <label> 
-                    Ingrese su Contraseña: <input type="password" name="contrasena"  placeholder="**********" class="textarea1">
-                </label> 
-                <br>
-                <button type="submit" class="submit-btn" name="ingresar"> Iniciar </button>
-
-            </form>
-            <a href="#" id="btn-cerrar-modal" class="anclaM" >Registrarse</a> 
-            
-        </dialog> 
-
-        
-        <dialog id="modal2">
-            <h1>Registrarse</h1>
-            <form method="POST" action="php/registroUser.php" >
-                <label> 
-                    Ingrese su Email: <input type="email" name="correo" required placeholder="Ej: SenderoNomada@gmail.com" class="textarea1">
-                </label>   
-                <br>
-                <label> 
-                    Ingrese su Contraseña: <input type="password" name="contrasena" required placeholder="**********" class="textarea1">
-                </label> 
-                <br>
-                
-                <button type="submit" class="submit-btn" > registrarse </button>
-
-            </form>
         </dialog>
 
 
@@ -232,27 +222,18 @@
             const btnAbrirModal =
             document.querySelector("#btn-abrir-modal");
 
-            const btnCerrarModal =
-            document.querySelector("#btn-cerrar-modal");
-
             const Modal =
             document.querySelector("#modal");
 
-            const Modal2 =
-            document.querySelector("#modal2");
 
             btnAbrirModal.addEventListener("click", ()=>{
                 Modal.showModal();
             });
 
-            btnCerrarModal.addEventListener("click", ()=>{
-                Modal.close();
-                Modal2.showModal();
-
-            });
         </script>
-    
 
+
+        
         <footer class="footer margen-interno">
             <nav class="pie">
                 <a href="#">Desarrollado por Wavy </a>

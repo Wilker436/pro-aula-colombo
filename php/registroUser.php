@@ -4,6 +4,12 @@ include 'database.php';
 if (isset($_POST['correo'])){
     $email = $_POST['correo'];
     $contraseña = $_POST['contrasena'];
+    $nombres = $_POST['nombres'];
+    $apellidos = $_POST['apellidos'];
+    $na = $_POST['na'];
+    $edad = $_POST['edad'];
+    $celular = $_POST['celular'];
+
 
     // Verificar si el correo ya está registrado
     $check_query = mysqli_prepare($conexion, "SELECT * FROM usuarios WHERE email = ?");
@@ -20,8 +26,8 @@ if (isset($_POST['correo'])){
         ';
     } else {
       // El correo no está registrado, procede a insertar los datos
-      $insert_query = mysqli_prepare($conexion, "INSERT INTO usuarios (email, contraseña) VALUES (?, ?)");
-      mysqli_stmt_bind_param($insert_query, 'ss', $email, $contraseña);
+      $insert_query = mysqli_prepare($conexion, "INSERT INTO usuarios (email, contraseña, nombres, apellidos, Nacionalidad, edad, celular) VALUES (?, ?, ?, ?, ?, ?, ?)");
+      mysqli_stmt_bind_param($insert_query, 'sssssss', $email, $contraseña, $nombres, $apellidos, $na, $edad, $celular);
       $ejecutar = mysqli_stmt_execute($insert_query);
 
       if($ejecutar){

@@ -1,3 +1,10 @@
+<?php
+session_start();
+
+if (empty($_SESSION["id"])) {
+    header("location: login.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,40 +26,16 @@
             if (parametro === 'Islandia') {
                 divpadre.innerHTML = `
                 <div class="islandia">
-                <header class="header">
+                
+                <div class="new-Body">
+                <div class="typewriter">
+                    <br>
+                    <br>
+                    <h1>¡Bienvenidos a Islandia! </h1>
 
-                    <div class="menu margen-interno">
-                        <div class="logo">
-                            <a href="index.php"><img src="imagenes/004.png" alt=""></a>
-                        </div>
-        
-                        <div class="nav">
-        
-                            <a href="Index.php">Inicio</a>
-                            <a href="nosotros.html">Nosotros</a>
-                            <a href="excursion.php">Excursiones</a>
-                            <a href="#" id="btn-abrir-modal">Cuenta</a>
-                        </div>
-        
-                        <div class="social">
-                            <div><a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a></div>
-                            <div><a href="https://www.instagram.com/senderodenomada/"><i
-                                        class="fa-brands fa-instagram fa-2xl"></i></a></div>
-                        </div>
-        
-                    </div>
-        
-                    <div class="new-Body">
-                        <div class="typewriter">
-                            <br>
-                            <br>
-                            <h1>¡Bienvenidos a Islandia! </h1>
-        
-                        </div>
-        
-                    </div>
-        
-                </header>
+                </div>
+
+                </div>
         
                 <section class="principal">
         
@@ -294,6 +277,8 @@
         
         
                 </section>
+
+                
         
                 <footer class="footer margen-interno">
                     <nav class="pie">
@@ -306,28 +291,7 @@
             } else if (parametro === 'Australia') {
                 divpadre.innerHTML = `
                 <div class="Australia">
-                    <header class="header">
-        
-                        <div class="menu margen-interno">
-                            <div class="logo">
-                                <a href="index.php"><img src="imagenes/004.png" alt=""></a>
-                            </div>
-        
-                            <div class="nav">
-        
-                                <a href="Index.php">Inicio</a>
-                                <a href="nosotros.html">Nosotros</a>
-                                <a href="excursion.php">Excursiones</a>
-                                <a href="#" id="btn-abrir-modal">Cuenta</a>
-                            </div>
-        
-                            <div class="social">
-                                <div><a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a></div>
-                                <div><a href="https://www.instagram.com/senderodenomada/"><i
-                                            class="fa-brands fa-instagram fa-2xl"></i></a></div>
-                            </div>
-        
-                        </div>
+
         
                         <div class="new-Body">
                             <div class="typewriterA">
@@ -339,7 +303,7 @@
         
                         </div>
         
-                    </header>
+                   
         
                     <section class="principal">
         
@@ -596,29 +560,7 @@
                 divpadre.innerHTML = `
 
                 <div class="Tai">
-                    <header class="header">
-        
-                        <div class="menu margen-interno">
-                            <div class="logo">
-                                <a href="index.php"><img src="imagenes/004.png" alt=""></a>
-                            </div>
-        
-                            <div class="nav">
-        
-                                <a href="Index.php">Inicio</a>
-                                <a href="nosotros.html">Nosotros</a>
-                                <a href="excursion.php">Excursiones</a>
-                                <a href="#" id="btn-abrir-modal">Cuenta</a>
-                            </div>
-        
-                            <div class="social">
-                                <div><a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a></div>
-                                <div><a href="https://www.instagram.com/senderodenomada/"><i
-                                            class="fa-brands fa-instagram fa-2xl"></i></a></div>
-                            </div>
-        
-                        </div>
-        
+       
                         <div class="new-Body">
                             <div class="typewriter">
                                 <br>
@@ -629,7 +571,7 @@
         
                         </div>
         
-                    </header>
+
         
                     <section class="principal">
         
@@ -890,28 +832,6 @@
                 divpadre.innerHTML = `
 
                 <div class="Isra">
-                    <header class="header">
-        
-                        <div class="menu margen-interno">
-                            <div class="logo">
-                                <a href="index.php"><img src="imagenes/004.png" alt=""></a>
-                            </div>
-        
-                            <div class="nav">
-        
-                                <a href="Index.php">Inicio</a>
-                                <a href="nosotros.html">Nosotros</a>
-                                <a href="excursion.php">Excursiones</a>
-                                <a href="#" id="btn-abrir-modal">Cuenta</a>
-                            </div>
-        
-                            <div class="social">
-                                <div><a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a></div>
-                                <div><a href="https://www.instagram.com/senderodenomada/"><i
-                                            class="fa-brands fa-instagram fa-2xl"></i></a></div>
-                            </div>
-        
-                        </div>
         
                         <div class="new-Body">
                             <div class="typewriter">
@@ -923,7 +843,7 @@
         
                         </div>
         
-                    </header>
+                  
         
                     <section class="principal">
         
@@ -1181,28 +1101,6 @@
                 divpadre.innerHTML = `
 
                 <div class="Egipto">
-                    <header class="header">
-        
-                        <div class="menu margen-interno">
-                            <div class="logo">
-                                <a href="index.php"><img src="imagenes/004.png" alt=""></a>
-                            </div>
-        
-                            <div class="nav">
-        
-                                <a href="Index.php">Inicio</a>
-                                <a href="nosotros.html">Nosotros</a>
-                                <a href="excursion.php">Excursiones</a>
-                                <a href="#" id="btn-abrir-modal">Cuenta</a>
-                            </div>
-        
-                            <div class="social">
-                                <div><a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a></div>
-                                <div><a href="https://www.instagram.com/senderodenomada/"><i
-                                            class="fa-brands fa-instagram fa-2xl"></i></a></div>
-                            </div>
-        
-                        </div>
         
                         <div class="new-Body">
                             <div class="typewriter">
@@ -1214,7 +1112,6 @@
         
                         </div>
         
-                    </header>
         
                     <section class="principal">
         
@@ -1472,29 +1369,7 @@
                 divpadre.innerHTML = `
 
                 <div class="Kenia">
-                    <header class="header">
-        
-                        <div class="menu margen-interno">
-                            <div class="logo">
-                                <a href="index.php"><img src="imagenes/004.png" alt=""></a>
-                            </div>
-        
-                            <div class="nav">
-        
-                                <a href="Index.php">Inicio</a>
-                                <a href="nosotros.html">Nosotros</a>
-                                <a href="excursion.php">Excursiones</a>
-                                <a href="#" id="btn-abrir-modal">Cuenta</a>
-                            </div>
-        
-                            <div class="social">
-                                <div><a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a></div>
-                                <div><a href="https://www.instagram.com/senderodenomada/"><i
-                                            class="fa-brands fa-instagram fa-2xl"></i></a></div>
-                            </div>
-        
-                        </div>
-        
+
                         <div class="new-Body">
                             <div class="typewriter">
                                 <br>
@@ -1505,7 +1380,6 @@
         
                         </div>
         
-                    </header>
         
                     <section class="principal">
         
@@ -1764,28 +1638,7 @@
                 divpadre.innerHTML = `
 
                 <div class="Grecia">
-                    <header class="header">
-        
-                        <div class="menu margen-interno">
-                            <div class="logo">
-                                <a href="index.php"><img src="imagenes/004.png" alt=""></a>
-                            </div>
-        
-                            <div class="nav">
-        
-                                <a href="Index.php">Inicio</a>
-                                <a href="nosotros.html">Nosotros</a>
-                                <a href="excursion.php">Excursiones</a>
-                                <a href="#" id="btn-abrir-modal">Cuenta</a>
-                            </div>
-        
-                            <div class="social">
-                                <div><a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a></div>
-                                <div><a href="https://www.instagram.com/senderodenomada/"><i
-                                            class="fa-brands fa-instagram fa-2xl"></i></a></div>
-                            </div>
-        
-                        </div>
+
         
                         <div class="new-Body">
                             <div class="typewriterA">
@@ -1797,7 +1650,6 @@
         
                         </div>
         
-                    </header>
         
                     <section class="principal">
         
@@ -2053,28 +1905,7 @@
                 divpadre.innerHTML = `
 
                 <div class="Alaska">
-                    <header class="header">
-        
-                        <div class="menu margen-interno">
-                            <div class="logo">
-                                <a href="index.php"><img src="imagenes/004.png" alt=""></a>
-                            </div>
-        
-                            <div class="nav">
-        
-                                <a href="Index.php">Inicio</a>
-                                <a href="nosotros.html">Nosotros</a>
-                                <a href="excursion.php">Excursiones</a>
-                                <a href="#" id="btn-abrir-modal">Cuenta</a>
-                            </div>
-        
-                            <div class="social">
-                                <div><a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a></div>
-                                <div><a href="https://www.instagram.com/senderodenomada/"><i
-                                            class="fa-brands fa-instagram fa-2xl"></i></a></div>
-                            </div>
-        
-                        </div>
+
         
                         <div class="new-Body">
                             <div class="typewriterA">
@@ -2086,7 +1917,6 @@
         
                         </div>
         
-                    </header>
         
                     <section class="principal">
         
@@ -2338,28 +2168,7 @@
                 divpadre.innerHTML = `
 
                 <div class="Noruega">
-                    <header class="header">
-        
-                        <div class="menu margen-interno">
-                            <div class="logo">
-                                <a href="index.php"><img src="imagenes/004.png" alt=""></a>
-                            </div>
-        
-                            <div class="nav">
-        
-                                <a href="Index.php">Inicio</a>
-                                <a href="nosotros.html">Nosotros</a>
-                                <a href="excursion.php">Excursiones</a>
-                                <a href="#" id="btn-abrir-modal">Cuenta</a>
-                            </div>
-        
-                            <div class="social">
-                                <div><a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a></div>
-                                <div><a href="https://www.instagram.com/senderodenomada/"><i
-                                            class="fa-brands fa-instagram fa-2xl"></i></a></div>
-                            </div>
-        
-                        </div>
+
         
                         <div class="new-Body">
                             <div class="typewriter">
@@ -2370,8 +2179,6 @@
                             </div>
         
                         </div>
-        
-                    </header>
         
                     <section class="principal">
         
@@ -2609,6 +2416,8 @@
         
         
                     </section>
+
+                    
         
                     <footer class="footer margen-interno">
                         <nav class="pie">
@@ -2649,10 +2458,81 @@
 
 <body>
 
-    <div class="div-padre" id="divpadre">
+    <div class="div-padre">
+        <header class="header">
 
+            <div class="menu margen-interno">
+                <div class="logo">
+                    <a href="index.php"><img src="imagenes/004.png" alt=""></a>
+                </div>
+
+                <div class="nav">       
+                        <a href="Index.php">Inicio</a>
+                        <a href="nosotros.php">Nosotros</a>
+                        <a href="excursion.php">Excursiones</a>
+                        <a href="#" id="btn-abrir-modal">Cuenta</a>
+                    </div>
+
+                <div class="social">
+                    <div><a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a></div>
+                    <div><a href="https://www.instagram.com/senderodenomada/"><i
+                                class="fa-brands fa-instagram fa-2xl"></i></a></div>
+                </div>
+
+            </div>
+        </header>
         
+        <div class="div-padre" id="divpadre">
+
+        </div>
+
+        <dialog id="modal">
+            <?php	
+            echo "<h1 class='bv'>  Bienvenido/a " . $_SESSION["nombres"] . " ". $_SESSION['apellidos']. "</h1> <br>";
+
+            echo "
+            <div  class='informacionUsuario'>
+            <h2 class='Infor'>Datos personales</h2>
+            <li>
+                <ol>Correo: ". $_SESSION["email"]."</ol>
+                <ol>Contraseña: ".$_SESSION["contraseña"] ."</ol>
+                <ol>Nacionalidad: ".$_SESSION["Nacionalidad"] ."</ol>
+                <ol>Edad: ".$_SESSION["edad"] . "</ol>
+                <ol>Numero telefonico: ".$_SESSION["celular"] ."</ol>
+            </li>
+            </div>             
+            ";                    
+    
+            ?>
+
+            <br>                    
+            <center><a href="php/controlador_cerrar_session.php" class="submit-btn">Cerrar sesion</a></center>
+
+        </dialog>
+
+
+
+        <script>
+            const btnAbrirModal =
+            document.querySelector("#btn-abrir-modal");
+
+            const Modal =
+            document.querySelector("#modal");
+
+
+            btnAbrirModal.addEventListener("click", ()=>{
+                Modal.showModal();
+            });
+
+        </script>
+
+
+
+
+    
     </div>
+
+    
 </body>
 
 </html>

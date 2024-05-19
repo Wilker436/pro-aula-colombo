@@ -1,34 +1,33 @@
 <?php
-    include 'database.php';
+session_start();
+    if(!empty($_POST["btningresar"])){
 
-    if(isset($_POST["ingresar"])) {
-        $email = $_POST["correo"];
-        $contraseña = $_POST["contrasena"];
 
-        // Validación simple de correo electrónico
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            echo '<script>alert("Correo electrónico no válido.");  window.location = "../index.php";</script>';
-            exit(); // Salir del script para evitar que se ejecute el código restante
-        }
+        if (!empty($_POST["correo"])  and !empty($_POST["contrasena"])) {
 
-        // Aquí deberías utilizar sentencias preparadas para evitar SQL Injection
-        $sql = $conexion->prepare("SELECT id FROM usuarios WHERE email=? AND contraseña=?");
-        $sql->bind_param("ss", $email, $contraseña);
-        $sql->execute();
-        $resultado = $sql->get_result();
+            $correo = $_POST["correo"];
+            $contra = $_POST["contrasena"];
 
-        if ($resultado->num_rows > 0) {
-
-            session_start(); // Iniciar la sesión si no ha sido iniciada
-            $usuario = $resultado->fetch_assoc(); // Obtener los datos del usuario
-            $_SESSION['id'] = $usuario['id']; // Guardar el ID del usuario en la sesión
-            echo '<script>alert("¡Inicio de sesión con éxito!"); window.location = "../excursion.php";</script>';
-            exit(); // Salir del script después de redirigir
-
+            $sql = $conexion->query(" SELECT * FROM usuarios WHERE email='$correo' and contraseña='$contra'");
             
-        } else {
-            echo '<script>alert("¡Correo electrónico o contraseña incorrectos!"); window.location = "../index.php";</script>';
-            exit(); // Salir del script después de redirigir
+            if ($datos=$sql->fetch_object()) {
+                $_SESSION["id"]=$datos->id;
+                $_SESSION["email"]=$datos->email;
+                $_SESSION["contraseña"]=$datos->contraseña;
+                $_SESSION["nombres"]=$datos->nombres;
+                $_SESSION["apellidos"]=$datos->apellidos;
+                $_SESSION["Nacionalidad"]=$datos->Nacionalidad;
+                $_SESSION["edad"]=$datos->edad;
+                $_SESSION["celular"]=$datos->celular;
+                header("location: index.php");
+            } else {
+                echo "<div class='alert'> <h1 id='alert'>acceso no concedido  </h1> <i class='fa-solid fa-circle-exclamation fa-bounce fa-2xl' style='color: #d2421e; font-size: 50px;' ></i>   </div>";
+            }
+            
+            
+          }else{
+            echo '<h1> Campos vacios  </h1>';
         }
+
     }
 ?>
