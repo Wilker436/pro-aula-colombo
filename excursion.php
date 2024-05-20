@@ -86,7 +86,7 @@ if (empty($_SESSION["id"])) {
                        echo "<h2 class=''> Cupos disponibles: " . $row['cupos'] . "</h2>";
                        echo "<hr>";
                        echo "<div class='excursionnn'>";
-                       echo "<a href='masInformacion.php?parametro=" . urlencode($row['Nombre']) . "'>Más Información</a>";
+                       echo "<a href='masInformacion.php?parametro=" . urlencode($row['Nombre']) . "'  class='submit-btn' >Más Información</a>";
                        echo "</div>";
                        echo "</div>";
                                }
@@ -118,7 +118,10 @@ if (empty($_SESSION["id"])) {
             ?>
 
             <br>                    
-            <center><a href="php/controlador_cerrar_session.php" class="submit-btn">Cerrar sesion</a></center>
+            <div class="controlC">
+            <a href="carrito.php" class="submit-btn">Carrito</a>               
+            <a href="php/controlador_cerrar_session.php" class="submit-btn b2">Cerrar sesion</a>
+            </div>
 
         </dialog>
 

@@ -264,7 +264,11 @@ if (empty($_SESSION["id"])) {
             ?>
 
             <br>                    
-            <center><a href="php/controlador_cerrar_session.php" class="submit-btn">Cerrar sesion</a></center>
+            <div class="controlC">
+            <center><a href="carrito.php" class="submit-btn">Carrito</a></center>                   
+            <center><a href="php/controlador_cerrar_session.php" class="submit-btn b2">Cerrar sesion</a></center>
+            </div>
+           
 
         </dialog>
 

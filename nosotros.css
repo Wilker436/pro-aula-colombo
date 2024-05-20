@@ -358,16 +358,17 @@ a {
 }
 .submit-btn {
     padding: 5px 15px;
-    font-size: 30px;
+    font-size: 20px;
     color: #fff;
     background: #355773;
     letter-spacing: 2px;
     border-radius: 90px 20px;
-    box-shadow: 0 4px #355773;
+    box-shadow: 0 4px #fff;
     border: none;
     cursor: pointer;
     display: block;
     position: relative;
+    margin-left: 3px;
 }
 
 .submit-btn:hover {
@@ -383,6 +384,9 @@ a {
     top: 6px;
 }
 
+.b2{
+    width: 230px;
+}
 li{
     list-style:none;
 }
@@ -394,7 +398,7 @@ li{
     background: rgba(0, 0, 0, 0.78);
 }
 #modal{
-    height: 530px;
+    height: 550px;
     width: 500px;
     position: absolute;
     top: 100px;
@@ -405,6 +409,13 @@ li{
     border: 5px solid #355773;
     padding: 50px;
     font-size: 20px; 
+}
+.controlC{
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #modal h1{

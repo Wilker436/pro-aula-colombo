@@ -62,7 +62,7 @@ if (empty($_SESSION["id"])) {
                                 -Duracion: 1 semana <br>
                                 -Precio: $2100
                             </p>
-                            <button type="submit" class="btn"> Reserva </button>
+                            <button type="submit" class="btn" id="reservaBtn"> Reserva </button>
                         </div>
                     </div>
         
@@ -288,6 +288,21 @@ if (empty($_SESSION["id"])) {
 
             </div>
                 `;
+
+                 // Selecciona el botón por su ID
+            document.getElementById('reservaBtn').addEventListener('click', function() {
+                const xhr = new XMLHttpRequest();
+                xhr.open('POST', 'php/insertarCarrito.php', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhr.onload = function() {
+                    if (xhr.status === 200) {
+                        alert('Reserva realizada con éxito');
+                    } else {
+                        alert('Error al realizar la reserva');
+                    }
+                };
+                xhr.send(`destino=${encodeURIComponent(parametro)}`);
+            });
             } else if (parametro === 'Australia') {
                 divpadre.innerHTML = `
                 <div class="Australia">
@@ -331,7 +346,7 @@ if (empty($_SESSION["id"])) {
                                     -Duracion: 1 semana <br>
                                     -Precio: $3000
                                 </p>
-                                <button type="submit" class="btn"> Reserva </button>
+                                <button type="submit" class="btn" id="reservaBtn"> Reserva </button>
                             </div>
                         </div>
         
@@ -556,6 +571,20 @@ if (empty($_SESSION["id"])) {
         
                 </div>
                     `;
+
+            document.getElementById('reservaBtn').addEventListener('click', function() {
+                const xhr = new XMLHttpRequest();
+                xhr.open('POST', 'php/insertarCarrito.php', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhr.onload = function() {
+                    if (xhr.status === 200) {
+                        alert('Reserva realizada con éxito');
+                    } else {
+                        alert('Error al realizar la reserva');
+                    }
+                };
+                xhr.send(`destino=${encodeURIComponent(parametro)}`);
+            });
             } else if (parametro === 'Tailandia') {
                 divpadre.innerHTML = `
 
@@ -599,7 +628,7 @@ if (empty($_SESSION["id"])) {
                                     -Duracion: 1 semana <br>
                                     -Precio: $2600
                                 </p>
-                                <button type="submit" class="btn"> Reserva </button>
+                                <button type="submit" class="btn" id="reservaBtn"> Reserva </button>
                             </div>
                         </div>
         
@@ -824,7 +853,19 @@ if (empty($_SESSION["id"])) {
                 </div>
 
                 `;
-
+            document.getElementById('reservaBtn').addEventListener('click', function() {
+                const xhr = new XMLHttpRequest();
+                xhr.open('POST', 'php/insertarCarrito.php', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhr.onload = function() {
+                    if (xhr.status === 200) {
+                        alert('Reserva realizada con éxito');
+                    } else {
+                        alert('Error al realizar la reserva');
+                    }
+                };
+                xhr.send(`destino=${encodeURIComponent(parametro)}`);
+            });
 
 
             }
@@ -871,7 +912,7 @@ if (empty($_SESSION["id"])) {
                                     -Duracion: 1 semana <br>
                                     -Precio: $3500
                                 </p>
-                                <button type="submit" class="btn"> Reserva </button>
+                                <button type="submit" class="btn" id="reservaBtn"> Reserva </button>
                             </div>
                         </div>
         
@@ -1096,6 +1137,19 @@ if (empty($_SESSION["id"])) {
                 </div>
 
                 `;
+                document.getElementById('reservaBtn').addEventListener('click', function() {
+                const xhr = new XMLHttpRequest();
+                xhr.open('POST', 'php/insertarCarrito.php', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhr.onload = function() {
+                    if (xhr.status === 200) {
+                        alert('Reserva realizada con éxito');
+                    } else {
+                        alert('Error al realizar la reserva');
+                    }
+                };
+                xhr.send(`destino=${encodeURIComponent(parametro)}`);
+            });                
             }
             else if (parametro === 'Egipto') {
                 divpadre.innerHTML = `
@@ -1138,7 +1192,7 @@ if (empty($_SESSION["id"])) {
                                     -Duracion: 1 semana <br>
                                     -Precio: $2500
                                 </p>
-                                <button type="submit" class="btn"> Reserva </button>
+                                <button type="submit" class="btn" id="reservaBtn"> Reserva </button>
                             </div>
                         </div>
         
@@ -1363,9 +1417,21 @@ if (empty($_SESSION["id"])) {
                 </div>
 
                 `;
+            document.getElementById('reservaBtn').addEventListener('click', function() {
+                const xhr = new XMLHttpRequest();
+                xhr.open('POST', 'php/insertarCarrito.php', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhr.onload = function() {
+                    if (xhr.status === 200) {
+                        alert('Reserva realizada con éxito');
+                    } else {
+                        alert('Error al realizar la reserva');
+                    }
+                };
+                xhr.send(`destino=${encodeURIComponent(parametro)}`);
+            });                
             }
-
-            else if (parametro === 'Kenia') {
+             else if (parametro === 'Kenia') {
                 divpadre.innerHTML = `
 
                 <div class="Kenia">
@@ -1406,7 +1472,7 @@ if (empty($_SESSION["id"])) {
                                     -Duracion: 1 semana <br>
                                     -Precio: $2800
                                 </p>
-                                <button type="submit" class="btn"> Reserva </button>
+                                <button type="submit" class="btn" id="reservaBtn"> Reserva </button>
                             </div>
                         </div>
         
@@ -1631,6 +1697,19 @@ if (empty($_SESSION["id"])) {
                 </div>
 
                 `;
+                document.getElementById('reservaBtn').addEventListener('click', function() {
+                const xhr = new XMLHttpRequest();
+                xhr.open('POST', 'php/insertarCarrito.php', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhr.onload = function() {
+                    if (xhr.status === 200) {
+                        alert('Reserva realizada con éxito');
+                    } else {
+                        alert('Error al realizar la reserva');
+                    }
+                };
+                xhr.send(`destino=${encodeURIComponent(parametro)}`);
+            });
 
             }
 
@@ -1675,7 +1754,7 @@ if (empty($_SESSION["id"])) {
                                     -Duracion: 1 semana <br>
                                     -Precio: $2800
                                 </p>
-                                <button type="submit" class="btn"> Reserva </button>
+                                <button type="submit" class="btn" id="reservaBtn"> Reserva </button>
                             </div>
                         </div>
         
@@ -1900,6 +1979,19 @@ if (empty($_SESSION["id"])) {
                 </div>
 
                 `;
+                document.getElementById('reservaBtn').addEventListener('click', function() {
+                const xhr = new XMLHttpRequest();
+                xhr.open('POST', 'php/insertarCarrito.php', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhr.onload = function() {
+                    if (xhr.status === 200) {
+                        alert('Reserva realizada con éxito');
+                    } else {
+                        alert('Error al realizar la reserva');
+                    }
+                };
+                xhr.send(`destino=${encodeURIComponent(parametro)}`);
+            });
             }
             else if (parametro === 'Alaska') {
                 divpadre.innerHTML = `
@@ -1939,7 +2031,7 @@ if (empty($_SESSION["id"])) {
                                     -Duracion: 1 semana <br>
                                     -Precio: $2100
                                 </p>
-                                <button type="submit" class="btn"> Reserva </button>
+                                <button type="submit" class="btn" id="reservaBtn"> Reserva </button>
                             </div>
                         </div>
         
@@ -2164,6 +2256,19 @@ if (empty($_SESSION["id"])) {
                 </div>
 
                 `;
+                document.getElementById('reservaBtn').addEventListener('click', function() {
+                const xhr = new XMLHttpRequest();
+                xhr.open('POST', 'php/insertarCarrito.php', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhr.onload = function() {
+                    if (xhr.status === 200) {
+                        alert('Reserva realizada con éxito');
+                    } else {
+                        alert('Error al realizar la reserva');
+                    }
+                };
+                xhr.send(`destino=${encodeURIComponent(parametro)}`);
+            });
             }else if (parametro === 'Noruega') {
                 divpadre.innerHTML = `
 
@@ -2201,7 +2306,7 @@ if (empty($_SESSION["id"])) {
                                     -Duracion: 1 semana <br>
                                     -Precio: $2800
                                 </p>
-                                <button type="submit" class="btn"> Reserva </button>
+                                <button type="submit" class="btn" id="reservaBtn"> Reserva </button>
                             </div>
                         </div>
         
@@ -2428,6 +2533,851 @@ if (empty($_SESSION["id"])) {
                 </div>
 
                 `;
+                document.getElementById('reservaBtn').addEventListener('click', function() {
+                const xhr = new XMLHttpRequest();
+                xhr.open('POST', 'php/insertarCarrito.php', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhr.onload = function() {
+                    if (xhr.status === 200) {
+                        alert('Reserva realizada con éxito');
+                    } else {
+                        alert('Error al realizar la reserva');
+                    }
+                };
+                xhr.send(`destino=${encodeURIComponent(parametro)}`);
+            });
+
+            }else if (parametro === 'Groenlandia') {
+                divpadre.innerHTML = `
+
+                <div class="groe">
+
+        
+                        <div class="new-Body">
+                            <div class="typewriter">
+                                <br>
+                                <br>
+                                <h1>¡Bienvenidos a Groenlandia! </h1>
+        
+                            </div>
+        
+                        </div>
+        
+                    <section class="principal">
+        
+                        <div class="text-principal">
+                            <h2>
+                            Groenlandia es el hogar de la segunda capa de hielo más grande del mundo, lo que la convierte en un destino ideal para los amantes de los glaciares y los icebergs. La costa está llena de fiordos y bahías, donde los icebergs se desprenden de los glaciares y flotan en el mar, creando un paisaje de ensueño.Además de sus paisajes glaciales, Groenlandia también ofrece una gran variedad de actividades al aire libre. La isla es el hogar de una gran variedad de vida silvestre, como osos polares, ballenas, focas y aves marinas, lo que la convierte en un destino ideal para los amantes de la naturaleza.
+                            </h2>
+                        </div>
+        
+                        <div class="Excursion" id="Excursion">
+        
+                            <img src="imagenes/Destinos/groenlandia.jpg" alt="" id="imga" class="imagen">
+        
+                            <div class="datos" id="datos">
+        
+                                <h1 class="titulo">ꕤGroenlandiaꕤ</h1>
+                                <p class="parrafo">
+                                    -Lider de expedicion: Claire Redfield  <br>
+                                    -Fecha: 2024-11-08<br>
+                                    -Duracion: 1 semana <br>
+                                    -Precio: $2200
+                                </p>
+                                <button type="submit" class="btn" id="reservaBtn"> Reserva </button>
+                            </div>
+                        </div>
+        
+                        <section class="container">
+        
+                            <div class="informacion">
+                                <div class="contenedor">
+                                    <div class="textx">
+        
+                                        <h1 class="h11">Incluidos</h1>
+                                        <ul class="p2">
+                                            <li>Lider de expedicion </li>
+                                            <li>Alojamiento </li>
+                                            <li>Desayunos, almuerzos, meriendas y cenas </li>
+                                            <li>Transporte durante la expedición </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="contenedor">
+                                    <div class="textx">
+        
+                                        <h1 class="h11">No Incluidos</h1>
+                                        <ul class="p2">
+                                            <li>Vuelos</li>
+                                            <li>Gastos personales</li>
+                                            <li>Tramites de visado</li>
+                                            <li>Gastos derivados de sucesos inesperados, ya sean por partes de terceros o de
+                                                carácter
+                                                meteorológico (retrasos, cancelaciones, inundaciones, desprendimientos, nevadas,
+                                                desastres naturales, etc)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </section>
+        
+        
+                        <section class="container">
+        
+                            <div class="texto-Excursiones">
+                                <h1 class="visitar">
+                                    ꕤIlulissatꕤ
+                                </h1>
+        
+                            </div>
+        
+                            <div class="slider-wrapper">
+        
+                                <div class="slider" id="slider">
+                                    <img id="slide-1" src="imagenes/groenlandia/gi1.jpg" alt="">
+                                    <img id="slide-2" src="imagenes/groenlandia/gi2.jpg" alt="">
+                                    <img id="slide-3" src="imagenes/groenlandia/gi3.jpg" alt="">
+                                    <img id="slide-4" src="imagenes/groenlandia/gi4.jpg" alt="">
+                                </div>
+                                <div class="slider-nav">
+                                    <a href="#slide-1"></a>
+                                    <a href="#slide-2"></a>
+                                    <a href="#slide-3"></a>
+                                    <a href="#slide-4"></a>
+                                </div>
+                            </div>
+        
+        
+                        </section>
+        
+        
+        
+                        <section class="container">
+        
+        
+                            <div class="slider-wrapper">
+        
+                                <div class="slider" id="slider">
+                                    <img id="slide2-1" src="imagenes/groenlandia/gn1.jpg" alt="">
+                                    <img id="slide2-2" src="imagenes/groenlandia/gn2.jpg" alt="">
+                                    <img id="slide2-3" src="imagenes/groenlandia/gn3.jpg" alt="">
+                                    <img id="slide2-4" src="imagenes/groenlandia/gn4.jpg" alt="">
+                                </div>
+                                <div class="slider-nav2">
+                                    <a href="#slide2-1"></a>
+                                    <a href="#slide2-2"></a>
+                                    <a href="#slide2-3"></a>
+                                    <a href="#slide2-4"></a>
+                                </div>
+                            </div>
+        
+                            <div class="texto-Excursiones2">
+                                <h1 class="visitar">
+                                    ꕤNuukꕤ
+                                </h1>
+        
+                            </div>
+        
+                        </section>
+        
+        
+                        <section class="container">
+        
+                            <div class="texto-Excursiones">
+                                <h1 class="visitar">
+                                    ꕤQaqortoqꕤ
+                                </h1>
+        
+                            </div>
+        
+                            <div class="slider-wrapper">
+        
+                                <div class="slider" id="slider">
+                                    <img id="slide3-1" src="imagenes/groenlandia/gq1.jpg" alt="">
+                                    <img id="slide3-2" src="imagenes/groenlandia/gq2.jpg" alt="">
+                                    <img id="slide3-3" src="imagenes/groenlandia/gq3.jpg" alt="">
+                                    <img id="slide3-4" src="imagenes/groenlandia/gq4.jpg" alt="">
+                                </div>
+                                <div class="slider-nav">
+                                    <a href="#slide3-1"></a>
+                                    <a href="#slide3-2"></a>
+                                    <a href="#slide3-3"></a>
+                                    <a href="#slide3-4"></a>
+                                </div>
+                            </div>
+        
+        
+                        </section>
+        
+        
+                        <section class="container">
+        
+        
+                            <div class="slider-wrapper">
+        
+                                <div class="slider" id="slider">
+                                    <img id="slide4-1" src="imagenes/groenlandia/gs4.jpg" alt="">
+                                    <img id="slide4-2" src="imagenes/groenlandia/gs2.jpg" alt="">
+                                    <img id="slide4-3" src="imagenes/groenlandia/gs3.jpg" alt="">
+                                    <img id="slide4-4" src="imagenes/groenlandia/gs1.jpg" alt="">
+                                </div>
+                                <div class="slider-nav2">
+                                    <a href="#slide4-1"></a>
+                                    <a href="#slide4-2"></a>
+                                    <a href="#slide4-3"></a>
+                                    <a href="#slide4-4"></a>
+                                </div>
+                            </div>
+        
+                            <div class="texto-Excursiones2">
+                                <h1 class="visitar">
+                                    ꕤScoresby Sundꕤ
+                                </h1>
+        
+                            </div>
+        
+                        </section>
+        
+        
+                        <section class="container">
+        
+                            <div class="texto-Excursiones">
+                                <h1 class="visitar">
+                                    ꕤKangerlussuaqꕤ
+                                </h1>
+        
+                            </div>
+        
+                            <div class="slider-wrapper">
+        
+                                <div class="slider" id="slider">
+                                    <img id="slide5-1" src="imagenes/groenlandia/gk1.jpg" alt="">
+                                    <img id="slide5-2" src="imagenes/groenlandia/gk2.jpg" alt="">
+                                    <img id="slide5-3" src="imagenes/groenlandia/gk3.jpg" alt="">
+                                    <img id="slide5-4" src="imagenes/groenlandia/gk4.jpg" alt="">
+                                </div>
+                                <div class="slider-nav">
+                                    <a href="#slide5-1"></a>
+                                    <a href="#slide5-2"></a>
+                                    <a href="#slide5-3"></a>
+                                    <a href="#slide5-4"></a>
+                                </div>
+                            </div>
+        
+        
+                        </section>
+        
+                        <section class="container">
+        
+        
+                            <div class="slider-wrapper">
+        
+                                <div class="slider" id="slider">
+                                    <img id="slide6-1" src="imagenes/groenlandia/gd1.jpg" alt="">
+                                    <img id="slide6-2" src="imagenes/groenlandia/gd2.jpg" alt="">
+                                    <img id="slide6-3" src="imagenes/groenlandia/gd3.jpg" alt="">
+                                    <img id="slide6-4" src="imagenes/groenlandia/gd4.jpg" alt="">
+                                </div>
+                                <div class="slider-nav2">
+                                    <a href="#slide6-1"></a>
+                                    <a href="#slide6-2"></a>
+                                    <a href="#slide6-3"></a>
+                                    <a href="#slide6-4"></a>
+                                </div>
+                            </div>
+        
+                            <div class="texto-Excursiones2">
+                                <h1 class="visitar">
+                                    ꕤDisko Bayꕤ
+                                </h1>
+        
+                            </div>
+        
+                        </section>
+        
+        
+        
+                    </section>
+
+                    
+        
+                    <footer class="footer margen-interno">
+                        <nav class="pie">
+                            <a href="#">Desarrollado por Wavy </a>
+                        </nav>
+                    </footer>
+        
+                </div>
+
+                `;
+                document.getElementById('reservaBtn').addEventListener('click', function() {
+                const xhr = new XMLHttpRequest();
+                xhr.open('POST', 'php/insertarCarrito.php', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhr.onload = function() {
+                    if (xhr.status === 200) {
+                        alert('Reserva realizada con éxito');
+                    } else {
+                        alert('Error al realizar la reserva');
+                    }
+                };
+                xhr.send(`destino=${encodeURIComponent(parametro)}`);
+            });
+            }else if (parametro === 'Costa Rica') {
+                divpadre.innerHTML = `
+
+                <div class="costa">
+
+        
+                        <div class="new-Body">
+                            <div class="typewriterA">
+                                <br>
+                                <br>
+                                <h1>¡Bienvenidos a Costa Rica! </h1>
+        
+                            </div>
+        
+                        </div>
+        
+                    <section class="principal">
+        
+                        <div class="text-principal">
+                            <h2>                   
+                                Costa Rica, el paraíso eco-turístico de Centroamérica, seduce a los viajeros con su exuberante biodiversidad, sus playas de ensueño y su espíritu pura vida. Desde las selvas tropicales del Parque Nacional Corcovado hasta las impresionantes cumbres del Volcán Arenal, y desde las vibrantes aguas azules del Parque Nacional Manuel Antonio hasta los tranquilos canales de Tortuguero, Costa Rica ofrece una variedad de experiencias inolvidables para los amantes de la naturaleza y la aventura. Con su compromiso con la conservación ambiental, su cultura acogedora y su paisaje diverso, Costa Rica invita a los viajeros.
+                            </h2>
+                        </div>
+        
+                        <div class="Excursion" id="Excursion">
+        
+                            <img src="imagenes/Destinos/costa.jpg" alt="" id="imga" class="imagen">
+        
+                            <div class="datos" id="datos">
+        
+                                <h1 class="titulo">ꕤCosta Ricaꕤ</h1>
+                                <p class="parrafo">
+                                    -Lider de expedicion:Juan Ponce de Leon <br>
+                                    -Fecha: 2025-01-10<br>
+                                    -Duracion: 1 semana <br>
+                                    -Precio: $1500
+                                </p>
+                                <button type="submit" class="btn" id="reservaBtn"> Reserva </button>
+                            </div>
+                        </div>
+        
+                        <section class="container">
+        
+                            <div class="informacion">
+                                <div class="contenedor">
+                                    <div class="textx">
+        
+                                        <h1 class="h11">Incluidos</h1>
+                                        <ul class="p2">
+                                            <li>Lider de expedicion </li>
+                                            <li>Alojamiento </li>
+                                            <li>Desayunos, almuerzos, meriendas y cenas </li>
+                                            <li>Transporte durante la expedición </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="contenedor">
+                                    <div class="textx">
+        
+                                        <h1 class="h11">No Incluidos</h1>
+                                        <ul class="p2">
+                                            <li>Vuelos</li>
+                                            <li>Gastos personales</li>
+                                            <li>Tramites de visado</li>
+                                            <li>Gastos derivados de sucesos inesperados, ya sean por partes de terceros o de
+                                                carácter
+                                                meteorológico (retrasos, cancelaciones, inundaciones, desprendimientos, nevadas,
+                                                desastres naturales, etc)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </section>
+        
+        
+                        <section class="container">
+        
+                            <div class="texto-Excursiones">
+                                <h1 class="visitar">
+                                    ꕤParque Nacional Manuel Antonioꕤ
+                                </h1>
+        
+                            </div>
+        
+                            <div class="slider-wrapper">
+        
+                                <div class="slider" id="slider">
+                                    <img id="slide-1" src="imagenes/costa/cm1.jpg" alt="">
+                                    <img id="slide-2" src="imagenes/costa/cm2.jpg" alt="">
+                                    <img id="slide-3" src="imagenes/costa/cm3.jpg" alt="">
+                                    <img id="slide-4" src="imagenes/costa/cm4.jpg" alt="">
+                                </div>
+                                <div class="slider-nav">
+                                    <a href="#slide-1"></a>
+                                    <a href="#slide-2"></a>
+                                    <a href="#slide-3"></a>
+                                    <a href="#slide-4"></a>
+                                </div>
+                            </div>
+        
+        
+                        </section>
+        
+        
+        
+                        <section class="container">
+        
+        
+                            <div class="slider-wrapper">
+        
+                                <div class="slider" id="slider">
+                                    <img id="slide2-1" src="imagenes/costa/cb1.jpg" alt="">
+                                    <img id="slide2-2" src="imagenes/costa/cb2.jpg" alt="">
+                                    <img id="slide2-3" src="imagenes/costa/cb3.jpg" alt="">
+                                    <img id="slide2-4" src="imagenes/costa/cb4.jpg" alt="">
+                                </div>
+                                <div class="slider-nav2">
+                                    <a href="#slide2-1"></a>
+                                    <a href="#slide2-2"></a>
+                                    <a href="#slide2-3"></a>
+                                    <a href="#slide2-4"></a>
+                                </div>
+                            </div>
+        
+                            <div class="texto-Excursiones2">
+                                <h1 class="visitar">
+                                    ꕤReserva Biológica Bosque Nuboso Monteverdeꕤ
+                                </h1>
+        
+                            </div>
+        
+                        </section>
+        
+        
+                        <section class="container">
+        
+                            <div class="texto-Excursiones">
+                                <h1 class="visitar">
+                                    ꕤParque Nacional Volcán Poásꕤ
+                                </h1>
+        
+                            </div>
+        
+                            <div class="slider-wrapper">
+        
+                                <div class="slider" id="slider">
+                                    <img id="slide3-1" src="imagenes/costa/cp1.jpg" alt="">
+                                    <img id="slide3-2" src="imagenes/costa/cp2.jpg" alt="">
+                                    <img id="slide3-3" src="imagenes/costa/cp3.jpg" alt="">
+                                    <img id="slide3-4" src="imagenes/costa/cp4.jpg" alt="">
+                                </div>
+                                <div class="slider-nav">
+                                    <a href="#slide3-1"></a>
+                                    <a href="#slide3-2"></a>
+                                    <a href="#slide3-3"></a>
+                                    <a href="#slide3-4"></a>
+                                </div>
+                            </div>
+        
+        
+                        </section>
+        
+        
+                        <section class="container">
+        
+        
+                            <div class="slider-wrapper">
+        
+                                <div class="slider" id="slider">
+                                    <img id="slide4-1" src="imagenes/costa/cc4.jpg" alt="">
+                                    <img id="slide4-2" src="imagenes/costa/cc2.jpg" alt="">
+                                    <img id="slide4-3" src="imagenes/costa/cc3.jpg" alt="">
+                                    <img id="slide4-4" src="imagenes/costa/cc1.jpg" alt="">
+                                </div>
+                                <div class="slider-nav2">
+                                    <a href="#slide4-1"></a>
+                                    <a href="#slide4-2"></a>
+                                    <a href="#slide4-3"></a>
+                                    <a href="#slide4-4"></a>
+                                </div>
+                            </div>
+        
+                            <div class="texto-Excursiones2">
+                                <h1 class="visitar">
+                                    ꕤCatarata La Fortunaꕤ
+                                </h1>
+        
+                            </div>
+        
+                        </section>
+        
+        
+                        <section class="container">
+        
+                            <div class="texto-Excursiones">
+                                <h1 class="visitar">
+                                    ꕤIsla Tortugaꕤ
+                                </h1>
+        
+                            </div>
+        
+                            <div class="slider-wrapper">
+        
+                                <div class="slider" id="slider">
+                                    <img id="slide5-1" src="imagenes/costa/ct1.jpg" alt="">
+                                    <img id="slide5-2" src="imagenes/costa/ct2.jpg" alt="">
+                                    <img id="slide5-3" src="imagenes/costa/ct3.jpg" alt="">
+                                    <img id="slide5-4" src="imagenes/costa/ct4.jpg" alt="">
+                                </div>
+                                <div class="slider-nav">
+                                    <a href="#slide5-1"></a>
+                                    <a href="#slide5-2"></a>
+                                    <a href="#slide5-3"></a>
+                                    <a href="#slide5-4"></a>
+                                </div>
+                            </div>
+        
+        
+                        </section>
+        
+                        <section class="container">
+        
+        
+                            <div class="slider-wrapper">
+        
+                                <div class="slider" id="slider">
+                                    <img id="slide6-1" src="imagenes/costa/ce1.jpg" alt="">
+                                    <img id="slide6-2" src="imagenes/costa/ce2.jpg" alt="">
+                                    <img id="slide6-3" src="imagenes/costa/ce3.jpg" alt="">
+                                    <img id="slide6-4" src="imagenes/costa/ce4.jpg" alt="">
+                                </div>
+                                <div class="slider-nav2">
+                                    <a href="#slide6-1"></a>
+                                    <a href="#slide6-2"></a>
+                                    <a href="#slide6-3"></a>
+                                    <a href="#slide6-4"></a>
+                                </div>
+                            </div>
+        
+                            <div class="texto-Excursiones2">
+                                <h1 class="visitar">
+                                    ꕤEcotermales fortunaꕤ
+                                </h1>
+        
+                            </div>
+        
+                        </section>
+        
+        
+        
+                    </section>
+
+                    
+        
+                    <footer class="footer margen-interno">
+                        <nav class="pie">
+                            <a href="#">Desarrollado por Wavy </a>
+                        </nav>
+                    </footer>
+        
+                </div>
+
+                `;
+                document.getElementById('reservaBtn').addEventListener('click', function() {
+                const xhr = new XMLHttpRequest();
+                xhr.open('POST', 'php/insertarCarrito.php', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhr.onload = function() {
+                    if (xhr.status === 200) {
+                        alert('Reserva realizada con éxito');
+                    } else {
+                        alert('Error al realizar la reserva');
+                    }
+                };
+                xhr.send(`destino=${encodeURIComponent(parametro)}`);
+            });
+            }else if (parametro === 'Ucrania') {
+                divpadre.innerHTML = `
+
+                <div class="ucrania">
+
+        
+                        <div class="new-Body">
+                            <div class="typewriterA">
+                                <br>
+                                <br>
+                                <h1>¡Bienvenidos a Ucrania! </h1>
+        
+                            </div>
+        
+                        </div>
+        
+                    <section class="principal">
+        
+                        <div class="text-principal">
+                            <h2>                   
+                            Ucrania, la encrucijada entre Oriente y Occidente, cautiva a los visitantes con su rica historia, su vibrante cultura y sus paisajes pintorescos. Desde las cúpulas doradas de Kiev hasta los antiguos castillos de Lviv, y desde los campos de girasoles de la región de Poltava hasta las montañas escarpadas de los Cárpatos, Ucrania ofrece una mezcla fascinante de tradición y modernidad. Con su legado de folklore, sus festivales coloridos y su hospitalidad sincera, Ucrania invita a los viajeros a explorar sus ciudades históricas, sumergirse en sus tradiciones arraigadas y descubrir la belleza única de este país europeo en constante evolución.
+                            </h2>
+                        </div>
+        
+                        <div class="Excursion" id="Excursion">
+        
+                            <img src="imagenes/Destinos/ucrania.jpg" alt="" id="imga" class="imagen">
+        
+                            <div class="datos" id="datos">
+        
+                                <h1 class="titulo">ꕤUcraniaꕤ</h1>
+                                <p class="parrafo">
+                                    -Lider de expedicion:Xiaomao Lee <br>
+                                    -Fecha: 2025-01-21<br>
+                                    -Duracion: 1 semana <br>
+                                    -Precio: $3500
+                                </p>
+                                <button type="submit" class="btn" id="reservaBtn"> Reserva </button>
+                            </div>
+                        </div>
+        
+                        <section class="container">
+        
+                            <div class="informacion">
+                                <div class="contenedor">
+                                    <div class="textx">
+        
+                                        <h1 class="h11">Incluidos</h1>
+                                        <ul class="p2">
+                                            <li>Lider de expedicion </li>
+                                            <li>Alojamiento </li>
+                                            <li>Desayunos, almuerzos, meriendas y cenas </li>
+                                            <li>Transporte durante la expedición </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="contenedor">
+                                    <div class="textx">
+        
+                                        <h1 class="h11">No Incluidos</h1>
+                                        <ul class="p2">
+                                            <li>Vuelos</li>
+                                            <li>Gastos personales</li>
+                                            <li>Tramites de visado</li>
+                                            <li>Gastos derivados de sucesos inesperados, ya sean por partes de terceros o de
+                                                carácter
+                                                meteorológico (retrasos, cancelaciones, inundaciones, desprendimientos, nevadas,
+                                                desastres naturales, etc)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </section>
+        
+        
+                        <section class="container">
+        
+                            <div class="texto-Excursiones">
+                                <h1 class="visitar">
+                                    ꕤPripyatꕤ
+                                </h1>
+        
+                            </div>
+        
+                            <div class="slider-wrapper">
+        
+                                <div class="slider" id="slider">
+                                    <img id="slide-1" src="imagenes/ucrania/up1.jpg" alt="">
+                                    <img id="slide-2" src="imagenes/ucrania/up2.jpg" alt="">
+                                    <img id="slide-3" src="imagenes/ucrania/up3.jpg" alt="">
+                                    <img id="slide-4" src="imagenes/ucrania/up4.jpg" alt="">
+                                </div>
+                                <div class="slider-nav">
+                                    <a href="#slide-1"></a>
+                                    <a href="#slide-2"></a>
+                                    <a href="#slide-3"></a>
+                                    <a href="#slide-4"></a>
+                                </div>
+                            </div>
+        
+        
+                        </section>
+        
+        
+        
+                        <section class="container">
+        
+        
+                            <div class="slider-wrapper">
+        
+                                <div class="slider" id="slider">
+                                    <img id="slide2-1" src="imagenes/ucrania/uo1.jpg" alt="">
+                                    <img id="slide2-2" src="imagenes/ucrania/uo2.jpg" alt="">
+                                    <img id="slide2-3" src="imagenes/ucrania/uo3.jpg" alt="">
+                                    <img id="slide2-4" src="imagenes/ucrania/uo4.jpg" alt="">
+                                </div>
+                                <div class="slider-nav2">
+                                    <a href="#slide2-1"></a>
+                                    <a href="#slide2-2"></a>
+                                    <a href="#slide2-3"></a>
+                                    <a href="#slide2-4"></a>
+                                </div>
+                            </div>
+        
+                            <div class="texto-Excursiones2">
+                                <h1 class="visitar">
+                                    ꕤTeatro de Ópera y Ballet de Odessa ꕤ
+                                </h1>
+        
+                            </div>
+        
+                        </section>
+        
+        
+                        <section class="container">
+        
+                            <div class="texto-Excursiones">
+                                <h1 class="visitar">
+                                    ꕤArboretum Sofiyivka ꕤ
+                                </h1>
+        
+                            </div>
+        
+                            <div class="slider-wrapper">
+        
+                                <div class="slider" id="slider">
+                                    <img id="slide3-1" src="imagenes/ucrania/ua2.jpg" alt="">
+                                    <img id="slide3-2" src="imagenes/ucrania/ua1.jpg" alt="">
+                                    <img id="slide3-3" src="imagenes/ucrania/ua3.jpg" alt="">
+                                    <img id="slide3-4" src="imagenes/ucrania/ua4.jpg" alt="">
+                                </div>
+                                <div class="slider-nav">
+                                    <a href="#slide3-1"></a>
+                                    <a href="#slide3-2"></a>
+                                    <a href="#slide3-3"></a>
+                                    <a href="#slide3-4"></a>
+                                </div>
+                            </div>
+        
+        
+                        </section>
+        
+        
+                        <section class="container">
+        
+        
+                            <div class="slider-wrapper">
+        
+                                <div class="slider" id="slider">
+                                    <img id="slide4-1" src="imagenes/ucrania/uk1.jpg" alt="">
+                                    <img id="slide4-2" src="imagenes/ucrania/uk2.jpg" alt="">
+                                    <img id="slide4-3" src="imagenes/ucrania/uk3.jpg" alt="">
+                                    <img id="slide4-4" src="imagenes/ucrania/uk4.jpg" alt="">
+                                </div>
+                                <div class="slider-nav2">
+                                    <a href="#slide4-1"></a>
+                                    <a href="#slide4-2"></a>
+                                    <a href="#slide4-3"></a>
+                                    <a href="#slide4-4"></a>
+                                </div>
+                            </div>
+        
+                            <div class="texto-Excursiones2">
+                                <h1 class="visitar">
+                                    ꕤCastillo Kamianets-Podilskyiꕤ
+                                </h1>
+        
+                            </div>
+        
+                        </section>
+        
+        
+                        <section class="container">
+        
+                            <div class="texto-Excursiones">
+                                <h1 class="visitar">
+                                    ꕤMonasterio de las Cuevas de Kievꕤ
+                                </h1>
+        
+                            </div>
+        
+                            <div class="slider-wrapper">
+        
+                                <div class="slider" id="slider">
+                                    <img id="slide5-1" src="imagenes/ucrania/uc1.jpg" alt="">
+                                    <img id="slide5-2" src="imagenes/ucrania/uc2.jpg" alt="">
+                                    <img id="slide5-3" src="imagenes/ucrania/uc3.jpg" alt="">
+                                    <img id="slide5-4" src="imagenes/ucrania/uc4.jpg" alt="">
+                                </div>
+                                <div class="slider-nav">
+                                    <a href="#slide5-1"></a>
+                                    <a href="#slide5-2"></a>
+                                    <a href="#slide5-3"></a>
+                                    <a href="#slide5-4"></a>
+                                </div>
+                            </div>
+        
+        
+                        </section>
+        
+                        <section class="container">
+        
+        
+                            <div class="slider-wrapper">
+        
+                                <div class="slider" id="slider">
+                                    <img id="slide6-1" src="imagenes/ucrania/um1.jpg" alt="">
+                                    <img id="slide6-2" src="imagenes/ucrania/um2.jpg" alt="">
+                                    <img id="slide6-3" src="imagenes/ucrania/um3.jpg" alt="">
+                                    <img id="slide6-4" src="imagenes/ucrania/um4.jpg" alt="">
+                                </div>
+                                <div class="slider-nav2">
+                                    <a href="#slide6-1"></a>
+                                    <a href="#slide6-2"></a>
+                                    <a href="#slide6-3"></a>
+                                    <a href="#slide6-4"></a>
+                                </div>
+                            </div>
+        
+                            <div class="texto-Excursiones2">
+                                <h1 class="visitar">
+                                    ꕤCastillo Palanokꕤ
+                                </h1>
+        
+                            </div>
+        
+                        </section>
+        
+        
+        
+                    </section>
+
+                    
+        
+                    <footer class="footer margen-interno">
+                        <nav class="pie">
+                            <a href="#">Desarrollado por Wavy </a>
+                        </nav>
+                    </footer>
+        
+                </div>
+
+                `;
+                document.getElementById('reservaBtn').addEventListener('click', function() {
+                const xhr = new XMLHttpRequest();
+                xhr.open('POST', 'php/insertarCarrito.php', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhr.onload = function() {
+                    if (xhr.status === 200) {
+                        alert('Reserva realizada con éxito');
+                    } else {
+                        alert('Error al realizar la reserva');
+                    }
+                };
+                xhr.send(`destino=${encodeURIComponent(parametro)}`);
+            });
             }
             else {
                 banner.style.backgroundImage = '';
@@ -2453,7 +3403,7 @@ if (empty($_SESSION["id"])) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Mas informacion</title>
 </head>
 
 <body>
@@ -2506,7 +3456,10 @@ if (empty($_SESSION["id"])) {
             ?>
 
             <br>                    
-            <center><a href="php/controlador_cerrar_session.php" class="submit-btn">Cerrar sesion</a></center>
+            <div class="controlC">
+            <a href="carrito.php" class="submit-btn">Carrito</a>               
+            <a href="php/controlador_cerrar_session.php" class="submit-btn b2">Cerrar sesion</a>
+            </div>
 
         </dialog>
 

@@ -1,0 +1,413 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.div-padre {
+    display: flex;
+    flex-flow: column nowrap;
+    background: url(imagenes/f01.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+}
+
+.margen-interno {
+    padding: 0 50px;
+}
+
+.header {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+.menu {
+    background: rgba(0, 0, 0, 0.78);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 120px;
+}
+
+.logo {
+    flex: 1 1 auto;
+}
+
+.logo img {
+    padding-top: 10px;
+    max-width: 30%;
+    height: 30%;
+}
+
+.logo2 img {
+    padding-top: 10px;
+    max-width: 25%;
+    height: 25%;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 30px;
+}
+
+.nav {
+    flex: 5 1 auto;
+}
+
+.nav a {
+    color: #b2c0a5;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+
+.nav .here {
+    color: #ffffff;
+    text-decoration: underline overline #ffffff 3px;
+
+}
+
+
+.nav a:hover {
+    color: #fff;
+}
+
+
+.social {
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.social a {
+    color: #b2c0a5;
+    padding: 0 5px;
+}
+
+.social a:hover {
+    color: #ffffff;
+}
+
+
+/* */
+
+.new-Body {
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.typewriter h1 {
+    font-size: 50px;
+    color: #fff;
+    overflow: hidden;
+    border-right: .15em solid #5F6F52;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #5F6F52
+    }
+}
+
+.submit-btn {
+    display: block;
+    position: relative;
+    padding: 5px 15px;
+    font-size: 20px;
+    color: #FAFFE4;
+    background: #5F6F52;
+    letter-spacing: 2px;
+    border-radius: 90px 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px #88aa7b;
+    width: 300px;
+    margin-left: 3px;
+}
+
+.submit-btn:hover {
+    background: #D3E4CD;
+    color: #5F6F52;
+    box-shadow: 0 4px #88aa7b;
+    top: 2px;
+}
+
+.submit-btn:active {
+    box-shadow: none;
+    top: 6px;
+}
+
+#modal::backdrop {
+    background: rgba(0, 0, 0, 0.78);
+}
+
+#modal2::backdrop {
+    background: rgba(0, 0, 0, 0.78);
+}
+
+#modal {
+    height: 550px;
+    width: 500px;
+    position: absolute;
+    top: 100px;
+    left: 700px;
+    background: #ecf0d5;
+    color: #5F6F52;
+    ;
+    border-radius: 20px;
+    border: 5px solid #5F6F52;
+    padding: 50px;
+    font-size: 20px;
+}
+li{
+    list-style:none;
+}
+
+#modal h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.controlC{
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.anclaM {
+    margin-left: 75%;
+}
+
+
+.bv{
+    font-size: 25px;
+}
+
+.principal {
+    min-height: 900px;
+    color: white;
+}
+
+
+.reservas{
+    display: flex;
+    flex: 2 1 auto;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.ED {
+    margin-top: 50px;
+    margin-left: 100px;
+    text-align: left;
+    font-size: 30px;
+}
+
+
+.excursion {
+    background: #ecf0d5;
+    padding-top: 40px;
+    margin: 35px;
+    height: 550px;
+    width: 394px;
+    color: #5F6F52;
+    border: 5px solid #fff;
+
+}
+
+.excursion h1 {
+    text-align: center;
+
+}
+
+.excursion h2 {
+    text-align: left;
+    padding: 4px;
+}
+
+.excursion .center {
+    text-align: center;
+}
+
+hr {
+    border-top: 4px solid #ffffff;
+}
+
+.imagenE {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    max-width: 384px;
+    max-height: 300;
+}
+
+.excursion a {
+    position: relative;
+    margin-top: 40px;
+    padding: 5px 15px;
+    font-size: 20px;
+    color: #FAFFE4;
+    background: #5F6F52;
+    letter-spacing: 2px;
+    border-radius: 90px 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px #88aa7b;
+
+}
+
+.excursion a:hover {
+    background: #D3E4CD;
+    color: #5F6F52;
+    box-shadow: 0 4px #88aa7b;
+    top: 2px;
+}
+
+.excursion a:active{
+    box-shadow: none;
+    top: 6px;
+}
+
+.precios{
+    display: flex;
+    flex: 2 1 auto;
+    flex-flow: row wrap;
+    margin-top: 35px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 50px;
+    background: #ecf0d5;
+    width: 100%;
+    border: 5px solid #fff;
+    padding: 30px;
+    color: #000;
+}
+
+.dates{
+    margin-left: 20px;
+}
+
+.pagar{
+    margin-left: 50px;
+}
+.fac{
+    margin-left: 50px;
+}
+
+.pagar-btn{
+    display: block;
+    position: relative;
+    padding: 5px 15px;
+    font-size: 20px;
+    color: #FAFFE4;
+    background: #5F6F52;
+    letter-spacing: 2px;
+    border-radius: 90px 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px #88aa7b;
+    width: 150px;
+    margin-left: 3px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.pagar-btn:hover {
+    background: #D3E4CD;
+    color: #5F6F52;
+    box-shadow: 0 4px #88aa7b;
+    top: 2px;
+}
+
+.pagar-btn:active {
+    box-shadow: none;
+    top: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+
+.pie {
+    text-align: center;
+}
+
+.pie a {
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: o 10px;
+    letter-spacing: 2px;
+}
+
+
+.imgas{
+    width: 25%;
+    margin-left: -150px;
+}
+.facv{
+   background:  #5F6F52;
+   text-align: left;
+   margin-left: 150px;
+   color: white;
+}
+
+.facd{
+    text-align: right;
+    margin-right: 150px;
+    color: white;
+}
