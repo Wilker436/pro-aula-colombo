@@ -46,7 +46,7 @@ if (empty($_SESSION["id"])) {
                 </div>
 
                 <div class="social">
-                    <div><a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a></div>
+                    <div><a href="https://x.com/senderoDeNomada"><i class="fa-brands fa-twitter fa-2xl"></i></a></div>
                     <div><a href="https://www.instagram.com/senderodenomada/"><i class="fa-brands fa-instagram fa-2xl"></i></a></div>
                 </div>
 

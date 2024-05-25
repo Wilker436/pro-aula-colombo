@@ -97,11 +97,14 @@ if (empty($_SESSION["id"])) {
                             echo "<h2 class=''> Fecha: " . $row['fecha'] . "</h2>";
                             echo "<h2 class=''> Precio: " . $row['precio'] . "</h2>";
                             echo "<hr>";
-                            echo "<div class='controlC'> <a href='' class='submit-btn'>Eliminar del carrito</a></div>";    
+                            echo "<form method='POST' action='php/eliminarCarrito.php'>";
+                            echo "<input style='visibility:hidden;' type='text' name='id' readonly  value='".$row['idReserva']."'>";
+                            echo "<input style='visibility:hidden;' type='text' name='destino' readonly  value='".$row['excursion']."'>";
+                            echo "<div class='controlC'> <button type='submit' class='submit-btn'> Eliminar </button></div>";   
+                            echo "</form>"; 
                             $subtotal += $row['precio'];
                             
                             echo "</div>";
-
                         }
                         $impuestos = $subtotal * 0.19;
                         $total = $subtotal + $impuestos;
@@ -127,7 +130,7 @@ if (empty($_SESSION["id"])) {
                               </div>
 
                               <div class='pagar'>
-                                <a href='' class='pagar-btn'>Pagar</a>
+                                <a href='https://www.paypal.com/paypalme/Wilker436' class='pagar-btn'>Pagar</a>
                                 <a href='factura.php' class='pagar-btn'>factura</a>
                               </div>
 
