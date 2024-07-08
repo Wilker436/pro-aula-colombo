@@ -34,8 +34,7 @@ ob_start();
 <body class="facv">
 
             <center>
-                <img src="http://<?php echo $_SERVER['HTTP_HOST'];?>/proyectoAula/imagenes/001.png" alt="" class="imgas">
-
+                
                 <h1 class='facv'>Factura</h1>
                
                 

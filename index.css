@@ -24,6 +24,16 @@ a {
     background-size: cover;
 }
 
+.div-padres {
+    display: flex;
+    flex-flow: column nowrap;
+    background: url(imagenes/f01.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    height: 1100px;
+}
+
 .margen-interno {
     padding: 0 50px;
 }
@@ -163,6 +173,14 @@ a {
     align-items: center;
     justify-content: center;
 }
+
+.principal4 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+    min-height: 900px;
+}
+
 
 .principal3 {
     height: 900px;
@@ -585,4 +603,115 @@ li{
     text-transform: uppercase;
     padding: o 10px;
     letter-spacing: 2px;
+}
+
+.custom-file-input {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #D3E4CD;
+    border: 2px solid #5F6F52;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #5F6F52;
+    overflow: hidden;
+    text-align: center;
+    line-height: 35px; /* Adjust based on your desired vertical alignment */
+}
+
+.custom-file-input::before {
+    content: 'Seleccionar archivo';
+    display: inline-block;
+    background-color: #5F6F52;
+    color: white;
+    border: 1px solid #5F6F52;
+    border-radius: 5px;
+    padding: 5px 15px;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 33px; /* Adjust based on your desired button height */
+    margin-right: 10px;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.custom-file-input:hover::before {
+    background-color: #88aa7b;
+    border-color: #88aa7b;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.custom-file-input::file-selector-button {
+    visibility: hidden;
+}
+
+.custom-select {
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none; /* Remove default arrow in Safari */
+    -moz-appearance: none; /* Remove default arrow in Firefox */
+    background-color: #D3E4CD;
+    border: 2px solid #5F6F52;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #5F6F52;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%235F6F52" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14l-4.796-5.481c-.566-.648-.106-1.659.647-1.659h9.896c.753 0 1.213 1.011.647 1.659l-4.796 5.481a1 1 0 0 1-1.538 0z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px 16px;
+}
+
+.custom-select:hover {
+    border-color: #88aa7b;
+}
+
+.custom-select:focus {
+    outline: none;
+    border-color: #88aa7b;
+}
+
+.custom-select option {
+    background-color: #D3E4CD;
+    color: #5F6F52;
+}
+
+.custom-date-input {
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none; /* Remove default arrow in Safari */
+    -moz-appearance: none; /* Remove default arrow in Firefox */
+    background-color: #D3E4CD;
+    border: 2px solid #5F6F52;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #5F6F52;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.custom-date-input:hover {
+    border-color: #88aa7b;
+}
+
+.custom-date-input:focus {
+    outline: none;
+    border-color: #88aa7b;
+}
+
+.exi{
+    height: 1100px;
+    background: #302d2d;
 }

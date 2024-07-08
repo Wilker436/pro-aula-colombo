@@ -87,25 +87,28 @@ if (empty($_SESSION["id"])) {
                          $result = mysqli_query($conexion, $query) or die(mysqli_error($conexion));
 
                          $subtotal = 0;
-
-                         while ($row = mysqli_fetch_array($result, MYSQLI_BOTH)) {
-                            echo "<div class='excursion'>";
-                            echo "<h1 class=''>ꕤ " . $row['excursion'] . " ꕤ</h1>";
-                            echo "<img src='imagenes/Destinos/" . $row['imagen'] . "' alt='' class='imagenE'>";
-                            echo "<h2 class='center'> " . $row['lider'] . "</h2>";
-                            echo "<hr>";
-                            echo "<h2 class=''> Fecha: " . $row['fecha'] . "</h2>";
-                            echo "<h2 class=''> Precio: " . $row['precio'] . "</h2>";
-                            echo "<hr>";
-                            echo "<form method='POST' action='php/eliminarCarrito.php'>";
-                            echo "<input style='visibility:hidden;' type='text' name='id' readonly  value='".$row['idReserva']."'>";
-                            echo "<input style='visibility:hidden;' type='text' name='destino' readonly  value='".$row['excursion']."'>";
-                            echo "<div class='controlC'> <button type='submit' class='submit-btn'> Eliminar </button></div>";   
-                            echo "</form>"; 
-                            $subtotal += $row['precio'];
-                            
-                            echo "</div>";
-                        }
+                         if (mysqli_num_rows($result) > 0) {
+                            while ($row = mysqli_fetch_array($result, MYSQLI_BOTH)) {
+                                echo "<div class='excursion'>";
+                                echo "<h1 class=''>ꕤ " . $row['excursion'] . " ꕤ</h1>";
+                                echo "<img src='imagenes/Destinos/" . $row['imagen'] . "' alt='' class='imagenE'>";
+                                echo "<h2 class='center'> " . $row['lider'] . "</h2>";
+                                echo "<hr>";
+                                echo "<h2 class=''> Fecha: " . $row['fecha'] . "</h2>";
+                                echo "<h2 class=''> Precio: " . $row['precio'] . "</h2>";
+                                echo "<hr>";
+                                echo "<form method='POST' action='php/eliminarCarrito.php'>";
+                                echo "<input style='visibility:hidden;' type='text' name='id' readonly  value='".$row['idReserva']."'>";
+                                echo "<input style='visibility:hidden;' type='text' name='destino' readonly  value='".$row['excursion']."'>";
+                                echo "<div class='controlC'> <button type='submit' class='submit-btn'> Eliminar </button></div>";   
+                                echo "</form>"; 
+                                $subtotal += $row['precio'];
+                                
+                                echo "</div>";
+                            }
+                         } else {
+                            echo "<h1 class='ED'>El carrito se encuentra vacio</h1>";
+                        }    
                         $impuestos = $subtotal * 0.19;
                         $total = $subtotal + $impuestos;
 

@@ -81,6 +81,10 @@ a {
     background: url(imagenes/ucrania.jpg) center center/cover no-repeat;
 }
 
+.pred{
+    background: url(imagenes/fondo2.jpg);
+    background-position: 95%;
+}
 
 .header {
     display: flex;

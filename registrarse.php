@@ -36,7 +36,7 @@
 
 
                 <div class="social">
-                    <div><a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a></div>
+                    <div><a href="https://x.com/senderoDeNomada"><i class="fa-brands fa-twitter fa-2xl"></i></a></div>
                     <div><a href="https://www.instagram.com/senderodenomada/"><i class="fa-brands fa-instagram fa-2xl"></i></a></div>
                 </div>
 
@@ -57,41 +57,39 @@
         <div class="principal2">
 
         <div class="login">
-            
-
             <form method="POST" action="php/registroUser.php" class="form-container">
                 <label>
                     Ingrese su Email: <input type="email" name="correo" required placeholder="Ej: SenderoNomada@gmail.com" class="textarea">
                 </label>
                 <br>
                 <label>
-                    Ingrese su Contraseña: <input type="password" name="contrasena" required placeholder="**********" class="textarea">
+                    Ingrese su Contraseña: <input type="password" name="contrasena"  minlength="8" maxlength="20" placeholder="**********" class="textarea">
                 </label>
                 <br>
                 <label>
-                    Ingrese sus Nombres: <input type="text" name="nombres" required placeholder="German" class="textarea">
+                    Ingrese sus Nombres: <input type="text" name="nombres" required placeholder="German" class="textarea" pattern="[A-Za-zÀ-ÿ\s]+" title="Solo se permiten letras y espacios.">
                 </label>
                 <br>
                 <label>
-                    Ingrese sus Apellidos: <input type="text" name="apellidos" required placeholder="Garmendia" class="textarea">
+                    Ingrese sus Apellidos: <input type="text" name="apellidos" required placeholder="Garmendia" class="textarea" pattern="[A-Za-zÀ-ÿ\s]+" title="Solo se permiten letras y espacios.">
                 </label>
                 <br>
                 <label>
-                    Ingrese su Nacionalidad: <input type="text" name="na" required placeholder="Americano" class="textarea">
+                    Ingrese su Nacionalidad: <input type="text" name="na" required placeholder="Americano" class="textarea" pattern="[A-Za-zÀ-ÿ\s]+" title="Solo se permiten letras y espacios.">
                 </label>
                 <br>
                 <label>
-                    Ingrese su edad: <input type="number" name="edad" required placeholder="35" class="textarea">
+                    Ingrese su edad: <input type="number" name="edad" required placeholder="35" class="textarea" min="18" max="99" title="Ingrese una edad válida (máximo 99).">
                 </label>
                 <br>
                 <label>
-                    Ingrese su celular: <input type="number" name="celular" required placeholder="30040321" class="textarea">
+                    Ingrese su celular: <input type="text" name="celular" required placeholder="30040321" class="textarea" pattern="\d{1,20}" title="Solo se permiten números (máximo 20 dígitos).">
                 </label>
                 <br>
                 <center><button type="submit" class="submit-btn"> registrarse </button></center>
             </form>
+</div>
 
-        </div>
                 
 
         </div>

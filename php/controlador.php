@@ -21,7 +21,19 @@ session_start();
                 $_SESSION["celular"]=$datos->celular;
                 header("location: index.php");
             } else {
-                echo "<div class='alert'> <h1 id='alert'>acceso no concedido  </h1> <i class='fa-solid fa-circle-exclamation fa-bounce fa-2xl' style='color: #d2421e; font-size: 50px;' ></i>   </div>";
+                
+                $sql = $conexion->query(" SELECT * FROM administradores WHERE correo='$correo' and contraseña='$contra'");
+                if ($datos=$sql->fetch_object()) {
+                    $_SESSION["id"]=$datos->id;
+                    $_SESSION["email"]=$datos->Correo;
+                    $_SESSION["contraseña"]=$datos->contraseña;
+                    $_SESSION["nombres"]=$datos->Nombre;
+                    header("location: admin.html");
+                }else{
+                    echo "<div class='alert'> <h1 id='alert'>Acceso no concedido  </h1> <i class='fa-solid fa-circle-exclamation fa-bounce fa-2xl' style='color: #d2421e; font-size: 50px;' ></i>   </div>";
+                }
+
+
             }
             
             

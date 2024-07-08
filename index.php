@@ -93,7 +93,7 @@ if (empty($_SESSION["id"])) {
                         memorable. ¿Listo para embarcarte en tu próxima aventura inolvidable?</p>
 
                     <div class="ab">
-                        <center><a href="nosotros.html">Conocenos</a></center>
+                        <center><a href="nosotros.php">Conocenos</a></center>
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@ if (empty($_SESSION["id"])) {
                  <?php
                     include 'php/database.php';
                             
-                    $query = "SELECT Nombre, lider, fecha, precio, imagen, cupos FROM destinos  WHERE Nombre='Islandia' OR Nombre='Australia' OR Nombre='Tailandia' OR Nombre='Israel'";
+                    $query = "SELECT Nombre, lider, fecha, precio, imagen, cupos FROM destinos  WHERE Nombre='Islandia' OR Nombre='Australia' OR Nombre='Tailandia' OR Nombre='Costa Rica'";
 
                     $result = mysqli_query($conexion, $query) or die(mysqli_error($conexion));
 
@@ -121,7 +121,7 @@ if (empty($_SESSION["id"])) {
                         echo "<h2 class=''> Cupos disponibles: " . $row['cupos'] . "</h2>";
                         echo "<hr>";
                         echo "<div class='excursionnn'>";
-                        echo "<a href='masInformacion.php?parametro=" . urlencode($row['Nombre']) . "'>Más Información</a>";
+                        echo "<a href='more.php?parametro=" . urlencode($row['Nombre']) . "'>Más Información</a>";
                         echo "</div>";
                         echo "</div>";
                                 }
